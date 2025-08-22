@@ -72,7 +72,7 @@ if (file_exists($lang_file)) {
         }
         .carousel-item {
             flex: 0 0 20%; /* Muestra 5 elementos a la vez */
-            margin-right: 15px; /* Espacio entre los elementos */
+            /* margin-right: 15px; Espacio entre los elementos */
             transition: transform 0.6s ease-in-out;
         }
         .carousel-item:last-child {
@@ -96,6 +96,7 @@ if (file_exists($lang_file)) {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            /* width: 18rem; */ /* Removed fixed width */
         }
         .carousel-item .card img {
             max-width: 100%;
@@ -139,6 +140,15 @@ if (file_exists($lang_file)) {
             .carousel-item {
                 flex: 0 0 100%; /* 1 item on mobile */
             }
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000; /* Make arrows visible */
+            border-radius: 50%;
+            padding: 15px;
+        }
+        .carousel-indicators button {
+            background-color: #000; /* Make dots visible */
         }
     </style>
 </head>
