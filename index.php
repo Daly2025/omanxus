@@ -92,20 +92,32 @@ if (file_exists($lang_file)) {
             padding: 15px;
             margin: 10px; /* Margen entre las tarjetas */
             background-color: #fff;
-            height: 100%;
+            height: 250px !important; /* Fixed height for all cards */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /* width: 18rem; */ /* Removed fixed width */
+            flex-basis: calc(20% - 20px); /* Distribute space for 5 cards, accounting for margin */
+            max-width: calc(20% - 20px); /* Ensure max width for 5 cards */
         }
         .carousel-item .card img {
             max-width: 100%;
-            height: auto;
+            height: 100px; /* Fixed height for images */
+            object-fit: contain; /* Ensure image fits without cropping */
             margin-bottom: 10px;
         }
         .carousel-item .card h5 {
             font-size: 1rem;
             margin-bottom: 0;
+            white-space: normal; /* Ensure text wraps */
+            word-wrap: break-word; /* Ensure long words break */
+        }
+        .carousel-item .card-body {
+            flex-grow: 1; /* Allow card-body to take available space */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            padding: 10px;
         }
         .language-flags {
             position: absolute;
@@ -141,14 +153,21 @@ if (file_exists($lang_file)) {
                 flex: 0 0 100%; /* 1 item on mobile */
             }
         }
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+        }
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            background-color: #000; /* Make arrows visible */
+            background-color: #000 !important; /* Make arrows visible and override Bootstrap */
             border-radius: 50%;
             padding: 15px;
+            color: white; /* Ensure the arrow glyph is visible */
         }
         .carousel-indicators button {
-            background-color: #000; /* Make dots visible */
+            background-color: #000 !important; /* Make dots visible and override Bootstrap */
         }
     </style>
 </head>
@@ -172,31 +191,31 @@ if (file_exists($lang_file)) {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-around">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">INGENIERÍA MULTIDISCIPLINAR</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">PESAJE EN BARCOS</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">PESAJE INDUSTRIAL</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">FABRICACION DE MAQUINARIA ESPECIAL</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">INVESTIGACION E INVENCION MULTIDISCIPLINAR</h5>
@@ -206,31 +225,31 @@ if (file_exists($lang_file)) {
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-around">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">SECTOR DE LA PESCA</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">PUERTOS</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">SECTOR FRIGORIFICOS</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">SALA DE PROCESADO</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">SECTOR CONSERVERO</h5>
@@ -240,31 +259,31 @@ if (file_exists($lang_file)) {
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-around">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">ACUICULTURA EN EL MAR</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">BIOTECNOLOGIA APLICADA AL SECTOR MEDICO</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">ENEGYXUL INDUSTRIAL</h5>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
                                 <h5 class="card-title">FORMACION</h5>
