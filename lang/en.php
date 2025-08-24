@@ -1,5 +1,30 @@
 <?php
 $lang = array(
-    'welcome_message' => 'Hello, world! This is your new PHP website.'
+    'welcome_message' => 'Hello, world! This is your new PHP website.',
+    'lang_es' => 'Spanish',
+    'lang_en' => 'English',
+    'lang_fr' => 'French',
+    'lang_pt' => 'Portuguese',
+    'lang_ar' => 'Arabic',
+    'slide_1' => 'Slide 1',
+    'slide_2' => 'Slide 2',
+    'slide_3' => 'Slide 3',
+    'previous' => 'Previous',
+    'next' => 'Next',
+    'card_title_1' => 'MULTIDISCIPLINARY ENGINEERING',
+    'card_title_2' => 'WEIGHING ON BOATS',
+    'card_title_3' => 'INDUSTRIAL WEIGHING',
+    'card_title_4' => 'SPECIAL MACHINERY MANUFACTURING',
+    'card_title_5' => 'RESEARCH AND MULTIDISCIPLINARY INVENTION',
+    'card_title_6' => 'FISHING SECTOR',
+    'card_title_7' => 'PORTS',
+    'card_title_8' => 'REFRIGERATION SECTOR',
+    'card_title_9' => 'PROCESSING ROOM',
+    'card_title_10' => 'CANNING SECTOR',
+    'card_title_11' => 'AQUACULTURE AT SEA',
+    'card_title_12' => 'BIOTECHNOLOGY APPLIED TO THE ENVIRONMENTAL SECTOR',
+    'card_title_13' => 'BIOTECHNOLOGY APPLIED TO THE MEDICAL SECTOR',
+    'card_title_14' => 'INDUSTRIAL ENERGYXUL',
+    'card_title_15' => 'TRAINING'
 );
 ?>

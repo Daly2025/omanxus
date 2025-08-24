@@ -1,5 +1,32 @@
 <?php
 $lang = array(
-    'welcome_message' => 'Olá, mundo! Este é o seu novo site PHP.'
+    'welcome_message' => 'Olá, mundo! Este é o seu novo site PHP.',
+    'lang_es' => 'Espanhol',
+    'lang_en' => 'Inglês',
+    'lang_fr' => 'Francês',
+    'lang_ar' => 'Árabe',
+    'lang_pt' => 'Português',
+    'slide_1' => 'Slide 1',
+    'slide_2' => 'Slide 2',
+    'slide_3' => 'Slide 3',
+    'slide_4' => 'Slide 4',
+    'previous' => 'Anterior',
+    'next' => 'Próximo',
+    'card_title_1' => 'ENGENHARIA MULTIDISCIPLINAR',
+    'card_title_2' => 'PESAGEM EM BARCOS',
+    'card_title_3' => 'SISTEMAS DE PESAGEM INDUSTRIAL',
+    'card_title_4' => 'SISTEMAS DE PESAGEM PARA CAMINHÕES E VEÍCULOS',
+    'card_title_5' => 'SISTEMAS DE PESAGEM PARA VEÍCULOS FERROVIÁRIOS',
+    'card_title_6' => 'SISTEMAS DE PESAGEM PARA AERONAVES',
+    'card_title_7' => 'SISTEMAS DE PESAGEM PARA EMPILHADEIRAS',
+    'card_title_8' => 'SISTEMAS DE PESAGEM PARA GUINDASTES',
+    'card_title_9' => 'SISTEMAS DE PESAGEM PARA TANQUES E SILOS',
+    'card_title_10' => 'SISTEMAS DE PESAGEM PARA TRANSPORTADORES',
+    'card_title_11' => 'SISTEMAS DE PESAGEM PARA PALETES',
+    'card_title_12' => 'SISTEMAS DE PESAGEM PARA EIXOS',
+    'card_title_13' => 'SISTEMAS DE PESAGEM PARA CARREGADEIRAS',
+    'card_title_14' => 'SISTEMAS DE PESAGEM PARA DUMPERS',
+    'card_title_15' => 'SISTEMAS DE PESAGEM PARA TRATORES',
+    'card_title_16' => 'SISTEMAS DE PESAGEM PARA REBOQUES'
 );
 ?>

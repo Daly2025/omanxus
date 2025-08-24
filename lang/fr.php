@@ -1,5 +1,32 @@
 <?php
 $lang = array(
-    'welcome_message' => 'Bonjour le monde! Ceci est votre nouveau site web PHP.'
+    'welcome_message' => 'Bonjour le monde! Ceci est votre nouveau site web PHP.',
+    'lang_es' => 'Espagnol',
+    'lang_en' => 'Anglais',
+    'lang_fr' => 'Français',
+    'lang_ar' => 'Arabe',
+    'lang_pt' => 'Portugais',
+    'slide_1' => 'Diapositive 1',
+    'slide_2' => 'Diapositive 2',
+    'slide_3' => 'Diapositive 3',
+    'slide_4' => 'Diapositive 4',
+    'previous' => 'Précédent',
+    'next' => 'Suivant',
+    'card_title_1' => 'INGÉNIERIE MULTIDISCIPLINAIRE',
+    'card_title_2' => 'PESAGE SUR BATEAUX',
+    'card_title_3' => 'SYSTÈMES DE PESAGE INDUSTRIEL',
+    'card_title_4' => 'SYSTÈMES DE PESAGE POUR CAMIONS ET VÉHICULES',
+    'card_title_5' => 'SYSTÈMES DE PESAGE POUR VÉHICULES FERROVIAIRES',
+    'card_title_6' => 'SYSTÈMES DE PESAGE POUR AVIONS',
+    'card_title_7' => 'SYSTÈMES DE PESAGE POUR CHARIOTS ÉLÉVATEURS',
+    'card_title_8' => 'SYSTÈMES DE PESAGE POUR GRUES',
+    'card_title_9' => 'SYSTÈMES DE PESAGE POUR RÉSERVOIRS ET SILOS',
+    'card_title_10' => 'SYSTÈMES DE PESAGE POUR CONVOYEURS',
+    'card_title_11' => 'SYSTÈMES DE PESAGE POUR PALETTES',
+    'card_title_12' => 'SYSTÈMES DE PESAGE POUR AXES',
+    'card_title_13' => 'SYSTÈMES DE PESAGE POUR CHARGEUSES',
+    'card_title_14' => 'SYSTÈMES DE PESAGE POUR DUMPERS',
+    'card_title_15' => 'SYSTÈMES DE PESAGE POUR TRACTEURS',
+    'card_title_16' => 'SYSTÈMES DE PESAGE POUR REMORQUES'
 );
 ?>

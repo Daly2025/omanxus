@@ -31,162 +31,24 @@ if (file_exists($lang_file)) {
     <title>Omanxus</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .menu-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .menu-button:hover {
-            background-color: #0056b3;
-        }
-        .carousel-inner {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: hidden;
-        }
-        .carousel-item {
-            flex: 0 0 20%; /* Muestra 5 elementos a la vez */
-            /* margin-right: 15px; Espacio entre los elementos */
-            transition: transform 0.6s ease-in-out;
-        }
-        .carousel-item:last-child {
-            margin-right: 0;
-        }
-        .carousel-item .d-flex {
-            width: 100%;
-            justify-content: space-around;
-            align-items: stretch; /* Ensures all cards in a row have the same height */
-        }
-        .carousel-item .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            padding: 15px;
-            margin: 10px; /* Margen entre las tarjetas */
-            background-color: #fff;
-            height: 250px !important; /* Fixed height for all cards */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex-basis: calc(20% - 20px); /* Distribute space for 5 cards, accounting for margin */
-            max-width: calc(20% - 20px); /* Ensure max width for 5 cards */
-        }
-        .carousel-item .card img {
-            max-width: 100%;
-            height: 100px; /* Fixed height for images */
-            object-fit: contain; /* Ensure image fits without cropping */
-            margin-bottom: 10px;
-        }
-        .carousel-item .card h5 {
-            font-size: 1rem;
-            margin-bottom: 0;
-            white-space: normal; /* Ensure text wraps */
-            word-wrap: break-word; /* Ensure long words break */
-        }
-        .carousel-item .card-body {
-            flex-grow: 1; /* Allow card-body to take available space */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Center content vertically */
-            padding: 10px;
-        }
-        .language-flags {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            display: flex;
-            gap: 10px; /* Adds space between flags */
-        }
-        .language-flags img {
-            width: 40px; /* Adjust flag size as needed */
-            height: auto;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        /* Responsive adjustments */
-        @media (min-width: 1200px) {
-            .carousel-item {
-                flex: 0 0 20%; /* 5 items on large screens */
-            }
-        }
-        @media (min-width: 768px) and (max-width: 1199px) {
-            .carousel-item {
-                flex: 0 0 33.333%; /* 3 items on medium screens */
-            }
-        }
-        @media (min-width: 576px) and (max-width: 767px) {
-            .carousel-item {
-                flex: 0 0 50%; /* 2 items on tablets */
-            }
-        }
-        @media (max-width: 575px) {
-            .carousel-item {
-                flex: 0 0 100%; /* 1 item on mobile */
-            }
-        }
-        .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
-        }
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #000 !important; /* Make arrows visible and override Bootstrap */
-            border-radius: 50%;
-            padding: 15px;
-            color: white; /* Ensure the arrow glyph is visible */
-        }
-        .carousel-indicators button {
-            background-color: #000 !important; /* Make dots visible and override Bootstrap */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="language-flags">
-        <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="Español"></a>
-        <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="English"></a>
-        <a href="?lang=fr"><img src="https://flagcdn.com/fr.svg" alt="Français"></a>
-        <a href="?lang=pt"><img src="https://flagcdn.com/pt.svg" alt="Português"></a>
-        <a href="?lang=ar"><img src="https://flagcdn.com/sa.svg" alt="العربية"></a>
+        <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
+        <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
+        <a href="?lang=fr"><img src="https://flagcdn.com/fr.svg" alt="<?php echo $lang['lang_fr']; ?>"></a>
+        <a href="?lang=pt"><img src="https://flagcdn.com/pt.svg" alt="<?php echo $lang['lang_pt']; ?>"></a>
+        <a href="?lang=ar"><img src="https://flagcdn.com/sa.svg" alt="<?php echo $lang['lang_ar']; ?>"></a>
     </div>
     <h1><?php echo $lang['welcome_message']; ?></h1>
 
     <div class="container">
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="<?php echo $lang['slide_1']; ?>"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="<?php echo $lang['slide_2']; ?>"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="<?php echo $lang['slide_3']; ?>"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -194,65 +56,31 @@ if (file_exists($lang_file)) {
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">INGENIERÍA MULTIDISCIPLINAR</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_1']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">PESAJE EN BARCOS</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_2']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">PESAJE INDUSTRIAL</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_3']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">FABRICACION DE MAQUINARIA ESPECIAL</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_4']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">INVESTIGACION E INVENCION MULTIDISCIPLINAR</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR DE LA PESCA</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title">PUERTOS</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR FRIGORIFICOS</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title">SALA DE PROCESADO</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR CONSERVERO</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_5']; ?></h5>
                             </div>
                         </div>
                     </div>
@@ -262,31 +90,75 @@ if (file_exists($lang_file)) {
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">ACUICULTURA EN EL MAR</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_6']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_7']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">BIOTECNOLOGIA APLICADA AL SECTOR MEDICO</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_8']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">ENEGYXUL INDUSTRIAL</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_9']; ?></h5>
                             </div>
                         </div>
                         <div class="card">
                             <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                             <div class="card-body">
-                                <h5 class="card-title">FORMACION</h5>
+                                <h5 class="card-title"><?php echo $lang['card_title_10']; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_11']; ?></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_12']; ?></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_13']; ?></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_14']; ?></h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_15']; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $lang['card_title_16']; ?></h5>
                             </div>
                         </div>
                     </div>
@@ -294,11 +166,11 @@ if (file_exists($lang_file)) {
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden"><?php echo $lang['previous']; ?></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden"><?php echo $lang['next']; ?></span>
             </button>
         </div>
     </div>
