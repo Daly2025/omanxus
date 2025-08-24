@@ -7,10 +7,10 @@ body {
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 h1 {
     color: #333;
@@ -34,36 +34,48 @@ h1 {
 .carousel-inner {
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow: visible; /* Allow items to peek */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0; /* Remove margin to show full width */
+}
+
+body {
+    background: linear-gradient(to right, #8a2be2, #4169e1); /* Gradient background */
 }
 .carousel-item {
-    flex: 0 0 20%; /* Muestra 5 elementos a la vez */
-    /* margin-right: 15px; Espacio entre los elementos */
+    flex: 0 0 100%; /* Show 1 item at a time */
     transition: transform 0.6s ease-in-out;
+    padding: 0; /* Remove padding */
+    transform: scale(1); /* Active item is full size */
+    opacity: 1; /* Active item is fully visible */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
-.carousel-item:last-child {
-    margin-right: 0;
-}
-.carousel-item .d-flex {
-    width: 100%;
-    justify-content: space-around;
-    align-items: stretch; /* Ensures all cards in a row have the same height */
+
+.carousel-item.active {
+    transform: scale(1); /* Active item is full size */
+    opacity: 1; /* Active item is fully visible */
 }
 .carousel-item .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: none; /* Remove default border */
+    border-radius: 15px; /* More rounded corners for cards */
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* More prominent shadow */
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     margin: 10px; /* Margen entre las tarjetas */
     background-color: #fff;
-    height: 250px !important; /* Fixed height for all cards */
+    height: 280px !important; /* Slightly increased height for cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: calc(20% - 20px); /* Distribute space for 5 cards, accounting for margin */
-    max-width: calc(20% - 20px); /* Ensure max width for 5 cards */
+    flex-basis: 100%; /* Distribute space for 1 card */
+    max-width: 100%; /* Ensure max width for 1 card */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+.carousel-item .card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
 }
 .carousel-item .card img {
     max-width: 100%;
@@ -76,6 +88,7 @@ h1 {
     margin-bottom: 0;
     white-space: normal; /* Ensure text wraps */
     word-wrap: break-word; /* Ensure long words break */
+    color: #333;
 }
 .carousel-item .card-body {
     flex-grow: 1; /* Allow card-body to take available space */
@@ -85,6 +98,70 @@ h1 {
     justify-content: center; /* Center content vertically */
     padding: 10px;
 }
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Make navigation buttons smaller */
+    opacity: 1; /* Always visible */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent !important; /* Transparent background */
+    border-radius: 50%;
+    padding: 15px;
+    color: #333; /* Darker arrow glyph */
+    transition: background-color 0.3s ease;
+    box-shadow: none;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: transparent !important; /* Transparent background on hover */
+}
+.carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Darker dots */
+    border-radius: 50%;
+    width: 10px; /* Adjust size */
+    height: 10px; /* Adjust size */
+    margin: 0 5px; /* Space between indicators */
+    transition: background-color 0.3s ease;
+}
+.carousel-indicators button.active {
+    background-color: #000 !important; /* Active indicator is solid black */
+}
+/* Responsive adjustments */
+#mainCarousel {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+@media (min-width: 1200px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on large screens */
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on medium-large screens */
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on medium screens */
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on tablets */
+    }
+}
+@media (max-width: 575px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on mobile */
+    }
+}
+
 .language-flags {
     position: absolute;
     top: 10px;
@@ -99,19 +176,32 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 /* Responsive adjustments */
+#mainCarousel {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px; /* Adjust as needed */
+}
+
 @media (min-width: 1200px) {
     .carousel-item {
-        flex: 0 0 20%; /* 5 items on large screens */
+        flex: 0 0 100%; /* 1 item on large screens */
     }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .carousel-item {
-        flex: 0 0 33.333%; /* 3 items on medium screens */
+        flex: 0 0 100%; /* 1 item on medium-large screens */
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-item {
+        flex: 0 0 100%; /* 1 item on medium screens */
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .carousel-item {
-        flex: 0 0 50%; /* 2 items on tablets */
+        flex: 0 0 100%; /* 1 item on tablets */
     }
 }
 @media (max-width: 575px) {
@@ -120,7 +210,10 @@ h1 {
     }
 }
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
