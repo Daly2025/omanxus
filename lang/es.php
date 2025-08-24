@@ -25,6 +25,7 @@ $lang = array(
     'card_title_12' => 'BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE',
     'card_title_13' => 'BIOTECNOLOGIA APLICADA AL SECTOR MEDICO',
     'card_title_14' => 'ENEGYXUL INDUSTRIAL',
-    'card_title_15' => 'FORMACION'
+    'card_title_15' => 'FORMACION',
+    'card_title_16' => 'NUEVO TITULO DE TARJETA'
 );
 ?>

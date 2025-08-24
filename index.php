@@ -154,16 +154,6 @@ if (file_exists($lang_file)) {
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_16']; ?></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
