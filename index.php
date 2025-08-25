@@ -56,67 +56,33 @@ if (file_exists($lang_file)) {
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-around">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="images/ingeenieria-multidis.jpg" class="card-img-top" alt="Ingeniería Multidisciplinar">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_1']; ?></h5>
+                                <h5 class="card-title">MULTIDISCIPLINAR</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector de la Pesca">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_2']; ?></h5>
+                                <h5 class="card-title">SECTOR DE LA PESCA</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Puertos">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_3']; ?></h5>
+                                <h5 class="card-title">PUERTOS</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector Frigoríficos">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_4']; ?></h5>
+                                <h5 class="card-title">SECTOR FRIGORÍFICOS</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sala de Procesado">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_5']; ?></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_6']; ?></h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_7']; ?></h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_8']; ?></h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_9']; ?></h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_10']; ?></h5>
+                                <h5 class="card-title">SALA DE PROCESADO</h5>
                             </div>
                         </div>
                     </div>
@@ -124,33 +90,43 @@ if (file_exists($lang_file)) {
                 <div class="carousel-item">
                     <div class="d-flex justify-content-around">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector Conservero">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_11']; ?></h5>
+                                <h5 class="card-title">SECTOR CONSERVERO</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Acuicultura en el Mar">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_12']; ?></h5>
+                                <h5 class="card-title">ACUICULTURA EN EL MAR</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Biotecnología Aplicada al Sector Medio Ambiente">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_13']; ?></h5>
+                                <h5 class="card-title">BIOTECNOLOGÍA APLICADA AL SECTOR MEDIO AMBIENTE</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Biotecnología Aplicada al Sector Médico">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_14']; ?></h5>
+                                <h5 class="card-title">BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO</h5>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Enegxul Industrial">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $lang['card_title_15']; ?></h5>
+                                <h5 class="card-title">ENEGYXUL INDUSTRIAL</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Formación">
+                            <div class="card-body">
+                                <h5 class="card-title">FORMACIÓN</h5>
                             </div>
                         </div>
                     </div>
