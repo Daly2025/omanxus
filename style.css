@@ -1,20 +1,63 @@
 body {
+    background: #000000;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000000;
+}
+
+.background-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/omanxus/images/fondo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.07;
 }
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
 }
 h1 {
-    color: #333;
+    color: #ffffff;
     text-align: center;
+}
+
+.img-fluid.d-block.mx-auto.mb-4 {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
 }
 .menu-button {
     display: block;
@@ -34,14 +77,17 @@ h1 {
 .carousel-inner {
     display: flex;
     flex-wrap: nowrap;
-    overflow: visible; /* Allow items to peek */
+    overflow: hidden; /* Prevent items from peeking */
     border-radius: 10px;
     padding: 15px;
     margin: 0; /* Remove margin to show full width */
 }
 
-body {
-    background: linear-gradient(to right, #8a2be2, #4169e1); /* Gradient background */
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjust for smaller screens */
+    }
 }
 .carousel-item {
     flex: 0 0 100%; /* Show 1 item at a time */
@@ -60,17 +106,17 @@ body {
     border: none; /* Remove default border */
     border-radius: 15px; /* More rounded corners for cards */
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* More prominent shadow */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* More prominent shadow */
     text-align: center;
     padding: 20px;
-    margin: 10px; /* Margen entre las tarjetas */
-    background-color: #fff;
+    margin: 0; /* Remove margin for full width */
+    background-color: rgba(255, 255, 255, 0.9);
     height: 280px !important; /* Slightly increased height for cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 100%; /* Distribute space for 1 card */
-    max-width: 100%; /* Ensure max width for 1 card */
+    flex-basis: 100%; /* Ensure 1 card per view */
+    max-width: 100%; /* Ensure 1 card per view */
     transition: transform 0.2s ease-in-out; /* Smooth hover effect */
 }
 .carousel-item .card:hover {

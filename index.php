@@ -34,6 +34,7 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-container"></div>
     <div class="language-flags">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
         <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
@@ -41,8 +42,8 @@ if (file_exists($lang_file)) {
         <a href="?lang=pt"><img src="https://flagcdn.com/pt.svg" alt="<?php echo $lang['lang_pt']; ?>"></a>
         <a href="?lang=ar"><img src="https://flagcdn.com/sa.svg" alt="<?php echo $lang['lang_ar']; ?>"></a>
     </div>
-    <img src="images/Copilot_20250824_132957.png" alt="Logo OMANXUS" class="img-fluid d-block mx-auto mb-4" style="max-width: 200px;">
-    <h1><?php echo $lang['welcome_message']; ?></h1>
+    <img src="images/Copilot_20250824_132957.png" alt="Logo OMANXUS" class="img-fluid d-block mx-auto mb-4" style="max-width: 500px;">
+    
 
     <div class="container">
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
