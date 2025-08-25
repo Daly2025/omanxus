@@ -42,7 +42,7 @@ if (file_exists($lang_file)) {
         <a href="?lang=pt"><img src="https://flagcdn.com/pt.svg" alt="<?php echo $lang['lang_pt']; ?>"></a>
         <a href="?lang=ar"><img src="https://flagcdn.com/sa.svg" alt="<?php echo $lang['lang_ar']; ?>"></a>
     </div>
-    <img src="images/Copilot_20250824_132957.png" alt="Logo OMANXUS" class="img-fluid d-block mx-auto mb-4" style="max-width: 500px;">
+
     
 
     <div class="container">
