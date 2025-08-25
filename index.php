@@ -46,100 +46,24 @@ if (file_exists($lang_file)) {
     
 
     <div class="container">
-        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="<?php echo $lang['slide_1']; ?>"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="<?php echo $lang['slide_2']; ?>"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="<?php echo $lang['slide_3']; ?>"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="images/ingeenieria-multidis.jpg" class="card-img-top" alt="Ingeniería Multidisciplinar">
-                            <div class="card-body">
-                                <h5 class="card-title">MULTIDISCIPLINAR</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector de la Pesca">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR DE LA PESCA</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Puertos">
-                            <div class="card-body">
-                                <h5 class="card-title">PUERTOS</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector Frigoríficos">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR FRIGORÍFICOS</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sala de Procesado">
-                            <div class="card-body">
-                                <h5 class="card-title">SALA DE PROCESADO</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sector Conservero">
-                            <div class="card-body">
-                                <h5 class="card-title">SECTOR CONSERVERO</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Acuicultura en el Mar">
-                            <div class="card-body">
-                                <h5 class="card-title">ACUICULTURA EN EL MAR</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Biotecnología Aplicada al Sector Medio Ambiente">
-                            <div class="card-body">
-                                <h5 class="card-title">BIOTECNOLOGÍA APLICADA AL SECTOR MEDIO AMBIENTE</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Biotecnología Aplicada al Sector Médico">
-                            <div class="card-body">
-                                <h5 class="card-title">BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Enegxul Industrial">
-                            <div class="card-body">
-                                <h5 class="card-title">ENEGYXUL INDUSTRIAL</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-around">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Formación">
-                            <div class="card-body">
-                                <h5 class="card-title">FORMACIÓN</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden"><?php echo $lang['previous']; ?></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden"><?php echo $lang['next']; ?></span>
-            </button>
+        <!-- Eliminamos el carrusel y añadimos el nuevo menú -->
+        <div class="menu-container">
+            <!-- Reemplazamos la lista con botones -->
+            <a href="ingenieria_multidisciplinar.php" class="menu-button">INGENIERÍA MULTIDISCIPLINAR</a>
+            <a href="pesaje_en_barcos.php" class="menu-button">PESAJE EN BARCOS</a>
+            <a href="pesaje_industrial.php" class="menu-button">PESAJE INDUSTRIAL</a>
+            <a href="fabricacion_maquinaria_especial.php" class="menu-button">FABRICACION DE MAQUINARIA ESPECIAL</a>
+            <a href="investigacion_invencion_multidisciplinar.php" class="menu-button">INVESTIGACION E INVENCION MULTIDISCIPLINAR</a>
+            <a href="sector_pesca.php" class="menu-button">SECTOR DE LA PESCA</a>
+            <a href="puertos.php" class="menu-button">PUERTOS</a>
+            <a href="sector_frigorificos.php" class="menu-button">SECTOR FRIGORIFICOS</a>
+            <a href="sala_procesado.php" class="menu-button">SALA DE PROCESADO</a>
+            <a href="sector_conservero.php" class="menu-button">SECTOR CONSERVERO</a>
+            <a href="acuicultura_mar.php" class="menu-button">ACUICULTURA EN EL MAR</a>
+            <a href="biotecnologia_medio_ambiente.php" class="menu-button">BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE</a>
+            <a href="biotecnologia_medico.php" class="menu-button">BIOTECNOLOGIA APLICADA AL SECTOR MEDICO</a>
+            <a href="energyxul_industrial.php" class="menu-button">ENEGYXUL INDUSTRIAL</a>
+            <a href="formacion.php" class="menu-button">FORMACION</a>
         </div>
     </div>
 

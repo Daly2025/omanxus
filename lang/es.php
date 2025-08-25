@@ -1,31 +1,20 @@
 <?php
-$lang = array(
-    'welcome_message' => '¡Hola, mundo! Esta es tu nueva página web PHP.',
-    'lang_es' => 'Español',
-    'lang_en' => 'Inglés',
-    'lang_fr' => 'Francés',
-    'lang_pt' => 'Portugués',
-    'lang_ar' => 'Árabe',
-    'slide_1' => 'Diapositiva 1',
-    'slide_2' => 'Diapositiva 2',
-    'slide_3' => 'Diapositiva 3',
-    'previous' => 'Anterior',
-    'next' => 'Siguiente',
-    'card_title_1' => 'INGENIERÍA MULTIDISCIPLINAR',
-    'card_title_2' => 'PESAJE EN BARCOS',
-    'card_title_3' => 'PESAJE INDUSTRIAL',
-    'card_title_4' => 'FABRICACION DE MAQUINARIA ESPECIAL',
-    'card_title_5' => 'INVESTIGACION E INVENCION MULTIDISCIPLINAR',
-    'card_title_6' => 'SECTOR DE LA PESCA',
-    'card_title_7' => 'PUERTOS',
-    'card_title_8' => 'SECTOR FRIGORIFICOS',
-    'card_title_9' => 'SALA DE PROCESADO',
-    'card_title_10' => 'SECTOR CONSERVERO',
-    'card_title_11' => 'ACUICULTURA EN EL MAR',
-    'card_title_12' => 'BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE',
-    'card_title_13' => 'BIOTECNOLOGIA APLICADA AL SECTOR MEDICO',
-    'card_title_14' => 'ENEGYXUL INDUSTRIAL',
-    'card_title_15' => 'FORMACION',
-    'card_title_16' => 'NUEVO TITULO DE TARJETA'
-);
-?>
+$lang = array(); // Asegúrate de que esta línea esté al principio del archivo
+
+$lang['welcome_message'] = '¡Hola, mundo! Esta es tu nueva página web PHP.';
+$lang['lang_es'] = 'Español';
+$lang['lang_en'] = 'Inglés';
+$lang['lang_fr'] = 'Francés';
+$lang['lang_pt'] = 'Portugués';
+$lang['lang_ar'] = 'Árabe';
+$lang['slide_1'] = 'Diapositiva 1';
+$lang['slide_2'] = 'Diapositiva 2';
+$lang['slide_3'] = 'Diapositiva 3';
+$lang['previous'] = 'Anterior';
+$lang['next'] = 'Siguiente';
+$lang['card_title_1'] = 'Ingeniería Multidisciplinar';
+$lang['card_title_2'] = 'Sector de la Pesca';
+$lang['card_title_3'] = 'Puertos';
+$lang['card_title_4'] = 'Sector Frigoríficos';
+$lang['card_title_5'] = 'Sala de Procesado';
+$lang['welcome_message'] = 'Bienvenido a Omanxus';
