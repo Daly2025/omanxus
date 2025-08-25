@@ -159,12 +159,16 @@ h1 {
     background-color: #000 !important; /* Active indicator is solid black */
 }
 /* Responsive adjustments */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    margin: 0;
+}
+
 #mainCarousel {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: auto;
 }
 
 @media (min-width: 1200px) {
@@ -212,7 +216,7 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 150px; /* Puedes ajustar este valor según sea necesario */
 }
 
 @media (min-width: 1200px) {
