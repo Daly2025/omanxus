@@ -62,13 +62,11 @@ body::before {
 
 #logo {
     position: absolute;
-    top: 50px; /* Adjusted top position to give more space from the top */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 250px; /* Slightly increased size */
-    height: auto;
-    z-index: 101; /* Increased z-index to ensure it's on top */
-    filter: drop-shadow(0 0 40px rgba(0, 255, 255, 1)); /* Even stronger glow effect */
+    top: 20px;
+    left: 20px;
+    width: 150px; /* Increased width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1000;
 }
 
 .menu-container {

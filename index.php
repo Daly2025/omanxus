@@ -34,6 +34,7 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img id="logo" src="images/logo1.png" alt="Logo">
     <div class="background-container"></div>
     <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
@@ -49,6 +50,7 @@ if (file_exists($lang_file)) {
         <!-- Eliminamos el carrusel y añadimos el nuevo menú -->
         <div class="menu-container">
             <!-- Reemplazamos la lista con botones -->
+
             <div class="button-group">
                 <a href="ingenieria_multidisciplinar.php" class="menu-button"><?php echo $lang['card_title_1']; ?></a>
                 <a href="pesaje_en_barcos.php" class="menu-button"><?php echo $lang['card_title_2']; ?></a>
@@ -79,6 +81,45 @@ if (file_exists($lang_file)) {
 
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ingenieriaButton = document.querySelector('a[href="ingenieria_multidisciplinar.php"]');
+            if (ingenieriaButton) {
+                ingenieriaButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default navigation
+
+                    // Create a div to display the image
+                    var previewDiv = document.createElement('div');
+                    previewDiv.style.position = 'fixed';
+                    previewDiv.style.top = '0';
+                    previewDiv.style.left = '0';
+                    previewDiv.style.width = '100%';
+                    previewDiv.style.height = '100%';
+                    previewDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'; // Dark overlay
+                    previewDiv.style.display = 'flex';
+                    previewDiv.style.justifyContent = 'center';
+                    previewDiv.style.alignItems = 'center';
+                    previewDiv.style.zIndex = '9999';
+
+                    // Create the image element
+                    var previewImage = document.createElement('img');
+                    previewImage.src = 'images/ingenieria multi.png';
+                    previewImage.style.maxWidth = '90%';
+                    previewImage.style.maxHeight = '90%';
+                    previewImage.style.objectFit = 'contain';
+
+                    previewDiv.appendChild(previewImage);
+                    document.body.appendChild(previewDiv);
+
+                    // Set a timeout to remove the image and redirect
+                    setTimeout(function() {
+                        document.body.removeChild(previewDiv);
+                        window.location.href = 'ingenieria_multidisciplinar.php';
+                    }, 2000); // Display for 2 seconds (2000 milliseconds)
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-<img id="logo" src="images/logo1.png" alt="Logo">
