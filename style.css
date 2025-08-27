@@ -13,7 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    overflow: hidden; /* Hide overflow for background effects */
+    overflow: auto; /* Cambiado de hidden a auto para permitir el desplazamiento */
     position: relative;
 }
 
@@ -189,5 +189,97 @@ body::before {
         width: 120px;
         height: 120px;
         font-size: 0.8em;
+    }
+}
+
+/* Styles for content sections */
+.content-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
+    color: #e0ffff; /* Light cyan text */
+}
+
+.section-title {
+    color: #00ffff; /* Bright cyan for main titles */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.lead-text {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a0ffff;
+}
+
+.section-subtitle {
+    color: #00e6e6; /* Slightly darker cyan for subtitles */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid rgba(0, 230, 230, 0.5);
+    padding-bottom: 5px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.content-section ul li {
+    background: rgba(0, 230, 230, 0.1); /* Light background for list items */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #00ffff;
+}
+
+.content-section .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #00ffff;
+}
+
+.contact-info a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for content */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+    .section-subtitle {
+        font-size: 1.5em;
+    }
+    .lead-text {
+        font-size: 1.1em;
+    }
+    .content-section {
+        padding: 20px;
     }
 }
