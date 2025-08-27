@@ -26,6 +26,57 @@ $lang = array(
     'card_title_12' => 'BIOTECNOLOGIA APLICADA AO SETOR AMBIENTAL',
     'card_title_13' => 'BIOTECNOLOGIA APLICADA AO SETOR MÉDICO',
     'card_title_14' => 'TEAXUL ENEXYUL INDUS',
-    'card_title_15' => 'FORMAÇÃO'
+    'card_title_15' => 'FORMAÇÃO',
+
+    // New keys for ingenieria_multidisciplinar.php
+    'multidisciplinary_engineering_title' => 'ENGENHARIA MULTIDISCIPLINAR',
+    'multidisciplinary_engineering_applied_title' => 'Engenharia Multidisciplinar Aplicada',
+    'multidisciplinary_engineering_lead_text' => 'Soluções abrangentes, visão técnica e compromisso com a eficiência',
+    'multidisciplinary_engineering_intro_paragraph' => 'Na OMANXUS Tecnologías del Conocimiento Aplicado S.L., entendemos que cada projeto é único e requer uma visão multidisciplinar, flexível e especializada. Nossa experiência acumulada em setores estratégicos nos permite oferecer soluções abrangentes que vão desde a concepção inicial até a entrega final de instalações totalmente operacionais.',
+
+    'project_management_title' => 'Gestão Integral de Projetos',
+    'project_management_intro_paragraph' => 'Nós cuidamos da coordenação global de cada projeto, adaptando-nos às necessidades específicas de cada cliente. Nossa gestão inclui:',
+    'project_management_list_item_1' => 'Definição clara de objetivos com o cliente',
+    'project_management_list_item_2' => 'Planejamento detalhado de obras e prazos',
+    'project_management_list_item_3' => 'Supervisão técnica e acompanhamento contínuo',
+    'project_management_list_item_4' => 'Coordenação de fornecedores, compras e execução',
+    'project_management_list_item_5' => 'Garantia de qualidade, custo e cumprimento de prazos',
+    'project_management_conclusion_paragraph' => 'Com uma abordagem proativa, fornecemos relatórios de acompanhamento e ferramentas de controle que garantem uma execução eficiente desde o projeto até a entrega.',
+
+    'technical_advisory_title' => 'Assessoria Técnica e Consultoria',
+    'technical_advisory_intro_paragraph' => 'Contamos com uma equipe de especialistas que elaboram:',
+    'technical_advisory_list_item_1' => 'Anteprojetos e estudos de viabilidade técnica e econômica',
+    'technical_advisory_list_item_2' => 'Memorandos de investimento e planos estratégicos',
+    'technical_advisory_list_item_3' => 'Projetos de engenharia industrial e tecnológica, adaptados às regulamentações locais e internacionais',
+    'technical_advisory_list_item_4' => 'Consultoria em inovação e eficiência operacional',
+
+    'process_engineering_title' => 'Engenharia de Processos',
+    'process_engineering_intro_paragraph' => 'Analisamos processos de produção e serviço para otimizar desempenho, sustentabilidade e adaptabilidade. Nossos projetos incluem:',
+    'process_engineering_list_item_1' => 'Engenharia de processos industriais',
+    'process_engineering_list_item_2' => 'Automação de linhas de produção',
+    'process_engineering_list_item_3' => 'Redesenho de fluxos operacionais',
+    'process_engineering_list_item_4' => 'Integração de tecnologias inteligentes e sustentáveis',
+
+    'application_sectors_title' => 'Setores de aplicação:',
+    'application_sectors_paragraph' => 'Pesagem Especial, Bioindústria · Biotecnologia Pesca · Aquicultura · Naval · Meio Ambiente · Energias Renováveis · Resíduos · Biodiversidade · Alimentos e muito mais.',
+
+    'industrial_organization_title' => 'Organização Industrial',
+    'industrial_organization_intro_paragraph' => 'Apoiamos empresas e indústrias na redefinição de seus modelos operacionais para melhorar sua competitividade. Nossos serviços permitem:',
+    'industrial_organization_list_item_1' => 'Reduzir custos de produção',
+    'industrial_organization_list_item_2' => 'Otimizar o uso de recursos e mão de obra',
+    'industrial_organization_list_item_3' => 'Integrar tecnologias lean e inteligentes',
+    'industrial_organization_list_item_4' => 'Adaptar-se às mudanças regulatórias e de mercado',
+
+    'turnkey_projects_title' => 'Projetos Chave na Mão',
+    'turnkey_projects_intro_paragraph' => 'Oferecemos soluções completas: do projeto à colocação em funcionamento. Na modalidade "Chave na Mão", assumimos total responsabilidade pelo projeto, que inclui:',
+    'turnkey_projects_list_item_1' => 'Engenharia e projeto técnico',
+    'turnkey_projects_list_item_2' => 'Processamento legal e licenças',
+    'turnkey_projects_list_item_3' => 'Compras e gestão de empreiteiros',
+    'turnkey_projects_list_item_4' => 'Construção e instalação',
+    'turnkey_projects_list_item_5' => 'Comissionamento e entrega funcional',
+    'turnkey_projects_conclusion_paragraph' => 'Esta fórmula permite que nossos clientes se concentrem em seus negócios, enquanto a OMANXUS garante uma execução profissional, eficiente e segura.',
+
+    'contact_us_question' => 'Você está interessado em desenvolver seu próximo projeto com uma abordagem multidisciplinar, inovadora e eficaz?',
+    'contact_us_email' => 'Entre em contato: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>'
 );
 ?>

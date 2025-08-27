@@ -1,15 +1,14 @@
 <?php
 $lang = array(
-    'welcome_message' => 'Bonjour le monde! Ceci est votre nouveau site web PHP.',
+    'welcome_message' => 'Bonjour, le monde! Ceci est votre nouveau site web PHP.',
     'lang_es' => 'Espagnol',
     'lang_en' => 'Anglais',
     'lang_fr' => 'Français',
-    'lang_ar' => 'Arabe',
     'lang_pt' => 'Portugais',
+    'lang_ar' => 'Arabe',
     'slide_1' => 'Diapositive 1',
     'slide_2' => 'Diapositive 2',
     'slide_3' => 'Diapositive 3',
-    'slide_4' => 'Diapositive 4',
     'previous' => 'Précédent',
     'next' => 'Suivant',
     'card_title_1' => 'INGÉNIERIE MULTIDISCIPLINAIRE',
@@ -19,13 +18,64 @@ $lang = array(
     'card_title_5' => 'RECHERCHE ET INVENTION',
     'card_title_6' => 'SECTEUR DE LA PÊCHE',
     'card_title_7' => 'PORTS',
-    'card_title_8' => 'SECTEUR FRIGORIFIQUE',
+    'card_title_8' => 'SECTEUR DU FROID',
     'card_title_9' => 'SALLE DE TRAITEMENT',
-    'card_title_10' => 'SECTEUR DE LA CONSERVE',
+    'card_title_10' => 'SECTEUR DE LA CONSERVERIE',
     'card_title_11' => 'AQUACULTURE EN MER',
     'card_title_12' => 'BIOTECHNOLOGIE APPLIQUÉE AU SECTEUR ENVIRONNEMENTAL',
     'card_title_13' => 'BIOTECHNOLOGIE APPLIQUÉE AU SECTEUR MÉDICAL',
     'card_title_14' => 'TEAXUL ENEXYUL INDUS',
-    'card_title_15' => 'FORMATION'
+    'card_title_15' => 'FORMATION',
+
+    // New keys for ingenieria_multidisciplinar.php
+    'multidisciplinary_engineering_title' => 'INGÉNIERIE MULTIDISCIPLINAIRE',
+    'multidisciplinary_engineering_applied_title' => 'Ingénierie Multidisciplinaire Appliquée',
+    'multidisciplinary_engineering_lead_text' => 'Solutions complètes, vision technique et engagement envers l\'efficacité',
+    'multidisciplinary_engineering_intro_paragraph' => 'Chez OMANXUS Tecnologías del Conocimiento Aplicado S.L., nous comprenons que chaque projet est unique et nécessite une vision multidisciplinaire, flexible et spécialisée. Notre expérience accumulée dans des secteurs stratégiques nous permet d\'offrir des solutions complètes allant de la conception initiale à la livraison finale d\'installations entièrement opérationnelles.',
+
+    'project_management_title' => 'Gestion Intégrale de Projets',
+    'project_management_intro_paragraph' => 'Nous nous chargeons de la coordination globale de chaque projet, en nous adaptant aux besoins spécifiques de chaque client. Notre gestion comprend:',
+    'project_management_list_item_1' => 'Définition claire des objectifs avec le client',
+    'project_management_list_item_2' => 'Planification détaillée des travaux et des délais',
+    'project_management_list_item_3' => 'Supervision technique et suivi continu',
+    'project_management_list_item_4' => 'Coordination des fournisseurs, des achats et de l\'exécution',
+    'project_management_list_item_5' => 'Garantie de qualité, de coût et de respect des délais',
+    'project_management_conclusion_paragraph' => 'Avec une approche proactive, nous fournissons des rapports de suivi et des outils de contrôle qui garantissent une exécution efficace de la conception à la livraison.',
+
+    'technical_advisory_title' => 'Conseil Technique et Consultance',
+    'technical_advisory_intro_paragraph' => 'Nous disposons d\'une équipe de spécialistes qui prépreparent:',
+    'technical_advisory_list_item_1' => 'Avant-projets et études de faisabilité technique et économique',
+    'technical_advisory_list_item_2' => 'Mémorandums d\'investissement et plans stratégiques',
+    'technical_advisory_list_item_3' => 'Projets d\'ingénierie industrielle et technologique, adaptés aux réglementations locales et internationales',
+    'technical_advisory_list_item_4' => 'Conseil en innovation et efficacité opérationnelle',
+
+    'process_engineering_title' => 'Ingénierie des Processus',
+    'process_engineering_intro_paragraph' => 'Nous analysons les processus de production et de service pour optimiser les performances, la durabilité et l\'adaptabilité. Nos projets incluent:',
+    'process_engineering_list_item_1' => 'Ingénierie des processus industriels',
+    'process_engineering_list_item_2' => 'Automatisation des lignes de production',
+    'process_engineering_list_item_3' => 'Redéfinition des flux opérationnels',
+    'process_engineering_list_item_4' => 'Intégration de technologies intelligentes et durables',
+
+    'application_sectors_title' => 'Secteurs d\'application:',
+    'application_sectors_paragraph' => 'Pesage Spécial, Bio-industrie · Biotechnologie Pêche · Aquaculture · Naval · Environnement · Énergies Renouvelables · Déchets · Biodiversité · Alimentation et plus encore.',
+
+    'industrial_organization_title' => 'Organisation Industrielle',
+    'industrial_organization_intro_paragraph' => 'Nous accompagnons les entreprises et les industries dans la refonte de leurs modèles opérationnels pour améliorer leur compétitivité. Nos services permettent:',
+    'industrial_organization_list_item_1' => 'Réduire les coûts de production',
+    'industrial_organization_list_item_2' => 'Optimiser l\'utilisation des ressources et de la main-d\'œuvre',
+    'industrial_organization_list_item_3' => 'Intégrer des technologies lean et intelligentes',
+    'industrial_organization_list_item_4' => 'S\'adapter aux changements réglementaires et du marché',
+
+    'turnkey_projects_title' => 'Projets Clé en Main',
+    'turnkey_projects_intro_paragraph' => 'Nous offrons des solutions complètes: de la conception à la mise en service. Sous la modalité "Clé en main", nous assumons l\'entière responsabilité du projet, ce qui inclut:',
+    'turnkey_projects_list_item_1' => 'Ingénierie et conception technique',
+    'turnkey_projects_list_item_2' => 'Traitement légal et permis',
+    'turnkey_projects_list_item_3' => 'Achats et gestion des entrepreneurs',
+    'turnkey_projects_list_item_4' => 'Construction et installation',
+    'turnkey_projects_list_item_5' => 'Mise en service et livraison fonctionnelle',
+    'turnkey_projects_conclusion_paragraph' => 'Cette formule permet à nos clients de se concentrer sur leur activité, tandis qu\'OMANXUS garantit une exécution professionnelle, efficace et sûre.',
+
+    'contact_us_question' => 'Êtes-vous intéressé à développer votre prochain projet avec une approche multidisciplinaire, innovante et efficace?',
+    'contact_us_email' => 'Contactez-nous: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>'
 );
 ?>

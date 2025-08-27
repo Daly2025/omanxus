@@ -11,7 +11,7 @@ $lang = array(
     'slide_3' => 'Slide 3',
     'previous' => 'Previous',
     'next' => 'Next',
-    'card_title_1' => 'MULTIDISCIPLINARY ENERGY',
+    'card_title_1' => 'MULTIDISCIPLINARY ENGINEERING',
     'card_title_2' => 'WEIGHING ON BOATS',
     'card_title_3' => 'INDUSTRIAL WEIGHING',
     'card_title_4' => 'SPECIAL MACHINERY MANUFACTURING',
@@ -25,6 +25,57 @@ $lang = array(
     'card_title_12' => 'BIOTECHNOLOGY APPLIED TO THE ENVIRONMENTAL SECTOR',
     'card_title_13' => 'BIOTECHNOLOGY APPLIED TO THE MEDICAL SECTOR',
     'card_title_14' => 'TEAXUL ENEXYUL INDUS',
-    'card_title_15' => 'TRAINING'
+    'card_title_15' => 'TRAINING',
+
+    // New keys for ingenieria_multidisciplinar.php
+    'multidisciplinary_engineering_title' => 'MULTIDISCIPLINARY ENGINEERING',
+    'multidisciplinary_engineering_applied_title' => 'Applied Multidisciplinary Engineering',
+    'multidisciplinary_engineering_lead_text' => 'Comprehensive solutions, technical vision, and commitment to efficiency',
+    'multidisciplinary_engineering_intro_paragraph' => 'At OMANXUS Tecnologías del Conocimiento Aplicado S.L., we understand that each project is unique and requires a multidisciplinary, flexible, and specialized vision. Our accumulated experience in strategic sectors allows us to offer comprehensive solutions ranging from initial conception to the final delivery of fully operational facilities.',
+
+    'project_management_title' => 'Comprehensive Project Management',
+    'project_management_intro_paragraph' => 'We handle the global coordination of each project, adapting to the specific needs of each client. Our management includes:',
+    'project_management_list_item_1' => 'Clear objective definition with the client',
+    'project_management_list_item_2' => 'Detailed work and timeline planning',
+    'project_management_list_item_3' => 'Technical supervision and continuous monitoring',
+    'project_management_list_item_4' => 'Coordination of suppliers, purchases, and execution',
+    'project_management_list_item_5' => 'Quality, cost, and time compliance guarantee',
+    'project_management_conclusion_paragraph' => 'With a proactive approach, we provide monitoring reports and control tools that ensure efficient execution from design to delivery.',
+
+    'technical_advisory_title' => 'Technical Advisory and Consulting',
+    'technical_advisory_intro_paragraph' => 'We have a team of specialists who prepare:',
+    'technical_advisory_list_item_1' => 'Preliminary projects and technical and economic feasibility studies',
+    'technical_advisory_list_item_2' => 'Investment memorandums and strategic plans',
+    'technical_advisory_list_item_3' => 'Industrial and technological engineering projects, adapted to local and international regulations',
+    'technical_advisory_list_item_4' => 'Consulting in innovation and operational efficiency',
+
+    'process_engineering_title' => 'Process Engineering',
+    'process_engineering_intro_paragraph' => 'We analyze production and service processes to optimize performance, sustainability, and adaptability. Our projects include:',
+    'process_engineering_list_item_1' => 'Industrial process engineering',
+    'process_engineering_list_item_2' => 'Automation of production lines',
+    'process_engineering_list_item_3' => 'Redesign of operational flows',
+    'process_engineering_list_item_4' => 'Integration of intelligent and sustainable technologies',
+
+    'application_sectors_title' => 'Application sectors:',
+    'application_sectors_paragraph' => 'Special Weighing, Bioindustry · Biotechnology Fishing · Aquaculture · Naval · Environment · Renewable Energies · Waste · Biodiversity · Food and more.',
+
+    'industrial_organization_title' => 'Industrial Organization',
+    'industrial_organization_intro_paragraph' => 'We support companies and industries in redesigning their operating models to improve their competitiveness. Our services allow:',
+    'industrial_organization_list_item_1' => 'Reduce production costs',
+    'industrial_organization_list_item_2' => 'Optimize resource and labor use',
+    'industrial_organization_list_item_3' => 'Integrate lean and intelligent technologies',
+    'industrial_organization_list_item_4' => 'Adapt to regulatory and market changes',
+
+    'turnkey_projects_title' => 'Turnkey Projects',
+    'turnkey_projects_intro_paragraph' => 'We offer complete solutions: from design to commissioning. Under the “Turnkey” modality, we assume full responsibility for the project, which includes:',
+    'turnkey_projects_list_item_1' => 'Engineering and technical design',
+    'turnkey_projects_list_item_2' => 'Legal processing and permits',
+    'turnkey_projects_list_item_3' => 'Purchasing and contractor management',
+    'turnkey_projects_list_item_4' => 'Construction and installation',
+    'turnkey_projects_list_item_5' => 'Commissioning and functional delivery',
+    'turnkey_projects_conclusion_paragraph' => 'This formula allows our clients to focus on their business, while OMANXUS guarantees professional, efficient, and safe execution.',
+
+    'contact_us_question' => 'Are you interested in developing your next project with a multidisciplinary, innovative, and effective approach?',
+    'contact_us_email' => 'Contact us: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>'
 );
 ?>
