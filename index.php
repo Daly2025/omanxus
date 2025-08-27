@@ -35,7 +35,7 @@ if (file_exists($lang_file)) {
 </head>
 <body>
     <div class="background-container"></div>
-    <div class="language-flags">
+    <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
         <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
         <a href="?lang=fr"><img src="https://flagcdn.com/fr.svg" alt="<?php echo $lang['lang_fr']; ?>"></a>
@@ -49,21 +49,31 @@ if (file_exists($lang_file)) {
         <!-- Eliminamos el carrusel y añadimos el nuevo menú -->
         <div class="menu-container">
             <!-- Reemplazamos la lista con botones -->
-            <a href="ingenieria_multidisciplinar.php" class="menu-button">INGENIERÍA MULTIDISCIPLINAR</a>
-            <a href="pesaje_en_barcos.php" class="menu-button">PESAJE EN BARCOS</a>
-            <a href="pesaje_industrial.php" class="menu-button">PESAJE INDUSTRIAL</a>
-            <a href="fabricacion_maquinaria_especial.php" class="menu-button">FABRICACION DE MAQUINARIA ESPECIAL</a>
-            <a href="investigacion_invencion_multidisciplinar.php" class="menu-button">INVESTIGACION E INVENCION MULTIDISCIPLINAR</a>
-            <a href="sector_pesca.php" class="menu-button">SECTOR DE LA PESCA</a>
-            <a href="puertos.php" class="menu-button">PUERTOS</a>
-            <a href="sector_frigorificos.php" class="menu-button">SECTOR FRIGORIFICOS</a>
-            <a href="sala_procesado.php" class="menu-button">SALA DE PROCESADO</a>
-            <a href="sector_conservero.php" class="menu-button">SECTOR CONSERVERO</a>
-            <a href="acuicultura_mar.php" class="menu-button">ACUICULTURA EN EL MAR</a>
-            <a href="biotecnologia_medio_ambiente.php" class="menu-button">BIOTECNOLOGIA APLICADA AL SECTOR MEDIO AMBIENTE</a>
-            <a href="biotecnologia_medico.php" class="menu-button">BIOTECNOLOGIA APLICADA AL SECTOR MEDICO</a>
-            <a href="energyxul_industrial.php" class="menu-button">ENEGYXUL INDUSTRIAL</a>
-            <a href="formacion.php" class="menu-button">FORMACION</a>
+            <div class="button-group">
+                <a href="ingenieria_multidisciplinar.php" class="menu-button">ENERGÍA MULTIDISCIPLINAR</a>
+                <a href="pesaje_en_barcos.php" class="menu-button">PESAJE EN BARCOS</a>
+                <a href="pesaje_industrial.php" class="menu-button">PESAJE INDUSTRIAL</a>
+            </div>
+            <div class="button-group">
+                <a href="fabricacion_maquinaria_especial.php" class="menu-button">FABRICACIÓN DE MAQUINARIA ESPECIAL</a>
+                <a href="investigacion_invencion_multidisciplinar.php" class="menu-button">INVESTIGACIÓN E INVENCIÓN</a>
+                <a href="sector_pesca.php" class="menu-button">SECTOR DE LA PESCA</a>
+            </div>
+            <div class="button-group">
+                <a href="puertos.php" class="menu-button">PUERTOS</a>
+                <a href="sector_frigorificos.php" class="menu-button">SECTOR FRIGORÍFICOS</a>
+                <a href="sala_procesado.php" class="menu-button">SALA DE PROCESADO</a>
+            </div>
+            <div class="button-group">
+                <a href="sector_conservero.php" class="menu-button">SECTOR CONSERVERO</a>
+                <a href="acuicultura_en_el_mar.php" class="menu-button">ACUICULTURA EN EL MAR</a>
+                <a href="biotecnologia_aplicada_medio_ambiente.php" class="menu-button">BIOTECNOLOGÍA APLICADA AL SECTOR MEDIO AMBIENTE</a>
+            </div>
+            <div class="button-group">
+                <a href="biotecnologia_aplicada_medico.php" class="menu-button">BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO</a>
+                <a href="energyxul_industrial.php" class="menu-button">TEAXUL ENEXYUL INDUS</a>
+                <a href="formacion.php" class="menu-button menu-button-circle">FORMACIÓN</a>
+            </div>
         </div>
     </div>
 
