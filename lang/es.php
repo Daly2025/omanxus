@@ -1,5 +1,5 @@
 <?php
-$lang = array(); // Asegúrate de que esta línea esté al principio del archivo
+$lang = array();
 
 $lang['welcome_message'] = '¡Hola, mundo! Esta es tu nueva página web PHP.';
 $lang['lang_es'] = 'Español';
@@ -12,9 +12,20 @@ $lang['slide_2'] = 'Diapositiva 2';
 $lang['slide_3'] = 'Diapositiva 3';
 $lang['previous'] = 'Anterior';
 $lang['next'] = 'Siguiente';
-$lang['card_title_1'] = 'Ingeniería Multidisciplinar';
-$lang['card_title_2'] = 'Sector de la Pesca';
-$lang['card_title_3'] = 'Puertos';
-$lang['card_title_4'] = 'Sector Frigoríficos';
-$lang['card_title_5'] = 'Sala de Procesado';
+$lang['card_title_1'] = 'ENERGÍA MULTIDISCIPLINAR';
+$lang['card_title_2'] = 'PESAJE EN BARCOS';
+$lang['card_title_3'] = 'PESAJE INDUSTRIAL';
+$lang['card_title_4'] = 'FABRICACIÓN DE MAQUINARIA ESPECIAL';
+$lang['card_title_5'] = 'INVESTIGACIÓN E INVENCIÓN';
+$lang['card_title_6'] = 'SECTOR DE LA PESCA';
+$lang['card_title_7'] = 'PUERTOS';
+$lang['card_title_8'] = 'SECTOR FRIGORÍFICOS';
+$lang['card_title_9'] = 'SALA DE PROCESADO';
+$lang['card_title_10'] = 'SECTOR CONSERVERO';
+$lang['card_title_11'] = 'ACUICULTURA EN EL MAR';
+$lang['card_title_12'] = 'BIOTECNOLOGÍA APLICADA AL SECTOR MEDIO AMBIENTE';
+$lang['card_title_13'] = 'BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO';
+$lang['card_title_14'] = 'TEAXUL ENEXYUL INDUS';
+$lang['card_title_15'] = 'FORMACIÓN';
+?>
 $lang['welcome_message'] = 'Bienvenido a Omanxus';

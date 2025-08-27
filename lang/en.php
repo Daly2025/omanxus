@@ -11,11 +11,11 @@ $lang = array(
     'slide_3' => 'Slide 3',
     'previous' => 'Previous',
     'next' => 'Next',
-    'card_title_1' => 'MULTIDISCIPLINARY ENGINEERING',
+    'card_title_1' => 'MULTIDISCIPLINARY ENERGY',
     'card_title_2' => 'WEIGHING ON BOATS',
     'card_title_3' => 'INDUSTRIAL WEIGHING',
     'card_title_4' => 'SPECIAL MACHINERY MANUFACTURING',
-    'card_title_5' => 'RESEARCH AND MULTIDISCIPLINARY INVENTION',
+    'card_title_5' => 'RESEARCH AND INVENTION',
     'card_title_6' => 'FISHING SECTOR',
     'card_title_7' => 'PORTS',
     'card_title_8' => 'REFRIGERATION SECTOR',
@@ -24,7 +24,7 @@ $lang = array(
     'card_title_11' => 'AQUACULTURE AT SEA',
     'card_title_12' => 'BIOTECHNOLOGY APPLIED TO THE ENVIRONMENTAL SECTOR',
     'card_title_13' => 'BIOTECHNOLOGY APPLIED TO THE MEDICAL SECTOR',
-    'card_title_14' => 'INDUSTRIAL ENERGYXUL',
+    'card_title_14' => 'TEAXUL ENEXYUL INDUS',
     'card_title_15' => 'TRAINING'
 );
 ?>

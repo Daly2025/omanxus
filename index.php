@@ -50,29 +50,29 @@ if (file_exists($lang_file)) {
         <div class="menu-container">
             <!-- Reemplazamos la lista con botones -->
             <div class="button-group">
-                <a href="ingenieria_multidisciplinar.php" class="menu-button">ENERGÍA MULTIDISCIPLINAR</a>
-                <a href="pesaje_en_barcos.php" class="menu-button">PESAJE EN BARCOS</a>
-                <a href="pesaje_industrial.php" class="menu-button">PESAJE INDUSTRIAL</a>
+                <a href="ingenieria_multidisciplinar.php" class="menu-button"><?php echo $lang['card_title_1']; ?></a>
+                <a href="pesaje_en_barcos.php" class="menu-button"><?php echo $lang['card_title_2']; ?></a>
+                <a href="pesaje_industrial.php" class="menu-button"><?php echo $lang['card_title_3']; ?></a>
             </div>
             <div class="button-group">
-                <a href="fabricacion_maquinaria_especial.php" class="menu-button">FABRICACIÓN DE MAQUINARIA ESPECIAL</a>
-                <a href="investigacion_invencion_multidisciplinar.php" class="menu-button">INVESTIGACIÓN E INVENCIÓN</a>
-                <a href="sector_pesca.php" class="menu-button">SECTOR DE LA PESCA</a>
+                <a href="fabricacion_maquinaria_especial.php" class="menu-button"><?php echo $lang['card_title_4']; ?></a>
+                <a href="investigacion_invencion_multidisciplinar.php" class="menu-button"><?php echo $lang['card_title_5']; ?></a>
+                <a href="sector_pesca.php" class="menu-button"><?php echo $lang['card_title_6']; ?></a>
             </div>
             <div class="button-group">
-                <a href="puertos.php" class="menu-button">PUERTOS</a>
-                <a href="sector_frigorificos.php" class="menu-button">SECTOR FRIGORÍFICOS</a>
-                <a href="sala_procesado.php" class="menu-button">SALA DE PROCESADO</a>
+                <a href="puertos.php" class="menu-button"><?php echo $lang['card_title_7']; ?></a>
+                <a href="sector_frigorificos.php" class="menu-button"><?php echo $lang['card_title_8']; ?></a>
+                <a href="sala_procesado.php" class="menu-button"><?php echo $lang['card_title_9']; ?></a>
             </div>
             <div class="button-group">
-                <a href="sector_conservero.php" class="menu-button">SECTOR CONSERVERO</a>
-                <a href="acuicultura_en_el_mar.php" class="menu-button">ACUICULTURA EN EL MAR</a>
-                <a href="biotecnologia_aplicada_medio_ambiente.php" class="menu-button">BIOTECNOLOGÍA APLICADA AL SECTOR MEDIO AMBIENTE</a>
+                <a href="sector_conservero.php" class="menu-button"><?php echo $lang['card_title_10']; ?></a>
+                <a href="acuicultura_en_el_mar.php" class="menu-button"><?php echo $lang['card_title_11']; ?></a>
+                <a href="biotecnologia_aplicada_medio_ambiente.php" class="menu-button"><?php echo $lang['card_title_12']; ?></a>
             </div>
             <div class="button-group">
-                <a href="biotecnologia_aplicada_medico.php" class="menu-button">BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO</a>
-                <a href="energyxul_industrial.php" class="menu-button">TEAXUL ENEXYUL INDUS</a>
-                <a href="formacion.php" class="menu-button menu-button-circle">FORMACIÓN</a>
+                <a href="biotecnologia_aplicada_medico.php" class="menu-button"><?php echo $lang['card_title_13']; ?></a>
+                <a href="energyxul_industrial.php" class="menu-button"><?php echo $lang['card_title_14']; ?></a>
+                <a href="formacion.php" class="menu-button menu-button-circle"><?php echo $lang['card_title_15']; ?></a>
             </div>
         </div>
     </div>
