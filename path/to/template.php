@@ -1,0 +1,6 @@
+// ... existing code ...
+<link rel="stylesheet" href="style.css">
+<?php if ($page_name == 'ingenieria_multidisciplinar'): ?>
+<link rel="stylesheet" href="ingenieria_multidisciplinar.css">
+<?php endif; ?>
+// ... existing code ...
