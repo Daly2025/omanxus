@@ -81,7 +81,7 @@ body::before {
     position: relative;
     z-index: 1;
     max-width: 1200px; /* Limit width for better layout */
-    margin: 20px;
+    margin: 20px auto; /* Centrar el contenedor en pantallas grandes */
 }
 
 .menu-container::after {
@@ -131,6 +131,7 @@ body::before {
     text-overflow: ellipsis;
     max-width: 250px; /* Limit button width */
     position: relative; /* Para posibles líneas desde el botón */
+    width: 100%; /* Asegura que los botones ocupen el ancho completo en pantallas pequeñas */
 }
 
 .menu-button:hover {
@@ -168,27 +169,47 @@ body::before {
 @media (max-width: 768px) {
     .menu-container {
         flex-direction: column;
-        padding: 20px;
-        gap: 15px;
+        padding: 10px; /* Reducir aún más el padding */
+        gap: 8px; /* Reducir el espacio entre elementos */
+        margin: 5px; /* Reducir el margen */
     }
 
     .menu-button {
-        width: 100%;
-        max-width: none;
+        width: 95%; /* Ajustar el ancho de los botones */
+        max-width: 300px; /* Establecer un max-width para evitar que sean demasiado anchos en tablets */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+        padding: 10px 15px; /* Ajustar el padding */
     }
 
     .menu-button-circle {
-        width: 150px;
-        height: 150px;
-        font-size: 0.9em;
+        width: 100px; /* Reducir el tamaño de los botones circulares */
+        height: 100px;
+        font-size: 0.7em;
+    }
+
+    #logo {
+        width: 80px; /* Reducir el tamaño del logo */
+        top: 5px;
+        left: 5px;
+    }
+
+    .language-selector {
+        top: 5px;
+        right: 5px;
     }
 }
 
 @media (max-width: 480px) {
-    .menu-button-circle {
-        width: 120px;
-        height: 120px;
+    .menu-button {
+        width: 100%; /* Asegurar que ocupen todo el ancho disponible */
         font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .menu-button-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 0.6em;
     }
 }
 
@@ -282,4 +303,7 @@ body::before {
     .content-section {
         padding: 20px;
     }
+}
+body.homepage-background {
+    background-image: url('images/fondillo.jpg');
 }
