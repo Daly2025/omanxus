@@ -36,6 +36,7 @@ if (file_exists($lang_file)) {
 <body class="homepage-background">
     <!-- <img id="logo" src="images/logo1.png" alt="Logo"> -->
     <div class="background-container"></div>
+    <!-- <h1 class="main-title">OMANXUS</h1> -->
     <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
         <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
