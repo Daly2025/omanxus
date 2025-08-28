@@ -1,8 +1,31 @@
 html,
 body {
-    height: 100%; /* Asegura que html y body ocupen el 100% de la altura */
-    margin: 0; /* Elimina el margen predeterminado */
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+/* Eliminar este bloque de código */
+/*
+body {
+    background-image: url('images/mult.jpg'); /* Set mult.jpg as background */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-color: #1a1a2e; /* Darker fallback color */
+    color: #8aff8a; /* Lighter green text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; /* Volvemos a flex para centrar el contenido */
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto; /* Cambiado de hidden a auto para permitir el desplazamiento */
+    position: relative;
+}
+*/
 
 body::before {
     content: '';
@@ -296,264 +319,9 @@ body::before {
         padding: 20px;
     }
 }
-body {
-    background-image: url('images/fondillo.jpg'); /* Asegura que el fondo principal sea fondillo.jpg */
-    background-size: cover; /* Esta propiedad hace que el fondo cubra toda la pantalla */
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-color: #1a1a2e;
-    color: #8aff8a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura del viewport */
-    overflow: auto;
-    position: relative;
-}
-
-.menu-container {
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 250px auto; /* Increased margin-top to prevent button overlap */
-}
-
-.menu-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: none; /* Remove brain_connections.png from menu-container::after */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.3; /* Aumentamos la opacidad para que sea más visible */
-    z-index: -1;
-    border-radius: 20px;
-    animation: pulse-connections 5s infinite alternate; /* Animación para un efecto dinámico */
-}
-
-@keyframes pulse-connections {
-    0% { opacity: 0.15; transform: scale(1); }
-    100% { opacity: 0.4; transform: scale(1.02); }
-}
-
-.button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    position: relative; /* Necesario para posicionar pseudo-elementos o líneas */
-}
-
-.menu-button {
-    background-color: rgba(0, 50, 100, 0.8); /* Semi-transparent blue */
-    color: #00e6e6;
-    border: 2px solid #00e6e6;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 15px rgba(0, 230, 230, 0.5); /* Sombra para el efecto de brillo */
-    text-align: center;
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 250px; /* Limit button width */
-    position: relative; /* Para posibles líneas desde el botón */
-    width: 100%; /* Asegura que los botones ocupen el ancho completo en pantallas pequeñas */
-}
-
-.menu-button:hover {
-    background-color: rgba(0, 230, 230, 0.2); /* Lighter cyan on hover */
-    color: #00ffff;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6); /* Brillo más intenso al pasar el ratón */
-    transform: translateY(-3px) scale(1.02);
-    border-color: #00ffff;
-}
-
-/* Animación de pulso para los botones */
-.menu-button {
-    animation: button-pulse 2s infinite alternate;
-}
-
-@keyframes button-pulse {
-    0% { box-shadow: 0 0 15px rgba(0, 230, 230, 0.5); }
-    100% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); }
-}
-
-.menu-button-circle {
-    border-radius: 50%;
-    width: 180px; /* Fixed width for circular buttons */
-    height: 180px; /* Fixed height for circular buttons */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-size: 1em;
-    word-break: break-word; /* Allow text to break within the circle */
-    white-space: normal; /* Allow text to wrap */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .menu-container {
-        flex-direction: column;
-        padding: 10px; /* Reducir aún más el padding */
-        gap: 8px; /* Reducir el espacio entre elementos */
-        margin: 5px; /* Reducir el margen */
-    }
-
-    .menu-button {
-        width: 95%; /* Ajustar el ancho de los botones */
-        max-width: 300px; /* Establecer un max-width para evitar que sean demasiado anchos en tablets */
-        font-size: 0.9em; /* Reducir el tamaño de la fuente */
-        padding: 10px 15px; /* Ajustar el padding */
-    }
-
-    .menu-button-circle {
-        width: 100px; /* Reducir el tamaño de los botones circulares */
-        height: 100px;
-        font-size: 0.7em;
-    }
-
-    #logo {
-        width: 250px; /* Adjusted logo size for smaller screens */
-        margin-top: 10px;
-        margin-bottom: 10px;
-        top: auto;
-        left: auto;
-    }
-
-    .language-selector {
-        top: 5px;
-        right: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .menu-button {
-        width: 100%; /* Asegurar que ocupen todo el ancho disponible */
-        font-size: 0.8em;
-        padding: 8px 10px;
-    }
-
-    .menu-button-circle {
-        width: 80px;
-        height: 80px;
-        font-size: 0.6em;
-    }
-}
-
-/* Styles for content sections */
-.content-section {
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly more opaque dark background */
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
-    color: #e0ffff; /* Light cyan text */
-}
-
-.section-title {
-    color: #b3ffb3; /* Lighter green for titles */
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 2.5em;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-}
-
-.lead-text {
-    font-size: 1.3em;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #a0ffff;
-}
-
-.section-subtitle {
-    color: #8aff8a; /* Green for subtitles */
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 1.8em;
-    border-bottom: 1px solid rgba(0, 230, 230, 0.5);
-    padding-bottom: 5px;
-}
-
-.content-section p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.content-section ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-}
-
-.content-section ul li {
-    background: rgba(0, 230, 230, 0.1); /* Light background for list items */
-    margin-bottom: 8px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border-left: 3px solid #00ffff;
-}
-
-.content-section .icon {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-.contact-info {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1.2em;
-    color: #00ffff;
-}
-
-.contact-info a {
-    color: #00ffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive adjustments for content */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2em;
-    }
-    .section-subtitle {
-        font-size: 1.5em;
-    }
-    .lead-text {
-        font-size: 1.1em;
-    }
-    .content-section {
-        padding: 20px;
-    }
-}
 body.homepage-background {
     background-image: url('images/logo index.png'); /* Esta es la imagen con el texto OMANXUS */
-    background-size: auto; /* Display the logo at its natural size */
+    background-size: cover; /* ✅ Esto sí cubre toda la pantalla */
     background-repeat: no-repeat; /* Do not repeat the logo */
     background-position: center top; /* Move the OMANXUS text to the top and center */
     background-attachment: fixed;
