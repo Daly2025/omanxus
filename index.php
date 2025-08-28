@@ -34,7 +34,7 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="homepage-background">
-    <img id="logo" src="images/logo1.png" alt="Logo">
+    <!-- <img id="logo" src="images/logo1.png" alt="Logo"> -->
     <div class="background-container"></div>
     <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>

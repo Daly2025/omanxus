@@ -61,12 +61,15 @@ body::before {
 }
 
 #logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px; /* Increased width */
-    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 450px; /* Further increased width for a larger logo */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     z-index: 1000;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); /* Add a white glow for visibility */
 }
 
 .menu-container {
@@ -188,9 +191,11 @@ body::before {
     }
 
     #logo {
-        width: 80px; /* Reducir el tamaño del logo */
-        top: 5px;
-        left: 5px;
+        width: 250px; /* Adjusted logo size for smaller screens */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        top: auto;
+        left: auto;
     }
 
     .language-selector {
@@ -305,5 +310,9 @@ body::before {
     }
 }
 body.homepage-background {
-    background-image: url('images/fondillo.jpg');
+    background-image: url('images/logo index.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el elemento */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el scroll */
 }
