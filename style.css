@@ -5,27 +5,7 @@ body {
     padding: 0;
 }
 
-/* Eliminar este bloque de código */
-/*
-body {
-    background-image: url('images/mult.jpg'); /* Set mult.jpg as background */
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center center; /* Center the image */
-    background-attachment: fixed; /* Keep the background fixed when scrolling */
-    background-color: #1a1a2e; /* Darker fallback color */
-    color: #8aff8a; /* Lighter green text for contrast */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex; /* Volvemos a flex para centrar el contenido */
-    flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    min-height: 100vh;
-    margin: 0;
-    overflow: auto; /* Cambiado de hidden a auto para permitir el desplazamiento */
-    position: relative;
-}
-*/
+
 
 body::before {
     content: '';
@@ -81,8 +61,8 @@ body::before {
     z-index: 1000;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); /* Add a white glow for visibility */
 }
-
 .menu-container {
+    margin-top: 200px; /* Adjust this value as needed to move buttons down */
     background-color: transparent; /* Remove background */
     border-radius: 20px;
     padding: 30px;
@@ -329,5 +309,12 @@ body.homepage-background {
 
 .main-title {
     display: none; /* Ensure any h1 tag with this class is hidden */
+}
+body.ingenieria-multidisciplinar {
+    background-image: url('../images/mult.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
