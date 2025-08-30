@@ -199,37 +199,46 @@ body::before {
 
 /* Styles for content sections */
 .content-section {
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly more opaque dark background */
+    background-color: transparent; /* Changed from rgba(0, 0, 0, 0.8) to transparent */
     padding: 30px;
     border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
-    color: #e0ffff; /* Light cyan text */
+    color: #333333; /* Changed from #e0ffff to a darker grey for better contrast */
 }
 
 .section-title {
-    color: #b3ffb3; /* Lighter green for titles */
+    color: #006666; /* Darker green for titles */
     text-align: center;
     margin-bottom: 25px;
     font-size: 2.5em;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    text-shadow: none; /* Removed text shadow for better readability with darker text */
 }
 
 .lead-text {
     font-size: 1.3em;
     text-align: center;
     margin-bottom: 30px;
-    color: #a0ffff;
+    color: #555555; /* Darker grey for lead text */
 }
 
 .section-subtitle {
-    color: #8aff8a; /* Green for subtitles */
+    color: #008080; /* Darker green for subtitles */
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 1.8em;
     border-bottom: 1px solid rgba(0, 230, 230, 0.5);
     padding-bottom: 5px;
+}
+
+.content-section ul li {
+    background: rgba(0, 0, 0, 0.1); /* Slightly darker background for list items */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #006666; /* Darker border for list items */
+    color: #333333; /* Ensure list item text is also dark */
 }
 
 .content-section p {
@@ -241,14 +250,6 @@ body::before {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 20px;
-}
-
-.content-section ul li {
-    background: rgba(0, 230, 230, 0.1); /* Light background for list items */
-    margin-bottom: 8px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border-left: 3px solid #00ffff;
 }
 
 .content-section .icon {
