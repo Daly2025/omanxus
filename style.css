@@ -50,19 +50,8 @@ body::before {
     color: #00ffff;
 }
 
-#logo {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 450px; /* Further increased width for a larger logo */
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    z-index: 1000;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); /* Add a white glow for visibility */
-}
 .menu-container {
-    margin-top: 200px; /* Adjust this value as needed to move buttons down */
+    margin-top: 20px; /* Reducido para subir los botones */
     background-color: transparent; /* Remove background */
     border-radius: 20px;
     padding: 30px;
@@ -310,11 +299,38 @@ body.homepage-background {
 .main-title {
     display: none; /* Ensure any h1 tag with this class is hidden */
 }
-body.ingenieria-multidisciplinar {
-    background-image: url('../images/mult.jpg'); /* Asegúrate de que la ruta sea correcta */
+.multidisciplinar-page {
+    background-image: url('images/mult.jpg'); /* Cambia la imagen de fondo a mult.jpg */
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 450px; /* Further increased width for a larger logo */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1000;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop_shadow(0 0 20px rgba(255, 255, 255, 0.6)); /* Add a white glow for visibility */
+}
+
+.main-title {
+    color: #00e6e6; /* Color del texto */
+    font-size: 3em; /* Tamaño de la fuente */
+    text-align: center;
+    margin-top: 50px; /* Ajusta según sea necesario para posicionar el título */
+    text-shadow: 0 0 10px rgba(0, 230, 230, 0.8), 0 0 20px rgba(0, 230, 230, 0.6); /* Sombra para el efecto de brillo */
+    z-index: 100;
+    position: relative;
+}
+.container {
+    padding-top: 10px; /* Ajustar el padding superior del contenedor principal */
+    padding-bottom: 10px; /* Ajustar el padding inferior del contenedor principal */
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
+    color: #e0ffff; /* Light cyan text */
 }
 
