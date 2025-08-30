@@ -474,7 +474,9 @@ body.homepage-background {
     box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
     color: #e0ffff; /* Light cyan text */
 }
-padding: 10px 20px;
+
+.back-to-home-button {
+    padding: 10px 20px;
     background-color: #007bff; /* Un color azul agradable */
     color: white;
     text-decoration: none;
@@ -486,4 +488,3 @@ padding: 10px 20px;
 .back-to-home-button:hover {
     background-color: #0056b3;
 }
-
