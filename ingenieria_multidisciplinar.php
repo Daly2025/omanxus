@@ -97,6 +97,9 @@ $page_content = "
         </div>
     </header>
     <main>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <a href="index.php" class="back-to-home-button">🏠</a>
+        </div>
         <?php echo $page_content; ?>
     </main>
     <footer>

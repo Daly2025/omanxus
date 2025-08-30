@@ -435,3 +435,55 @@ body.homepage-background {
     color: #e0ffff; /* Light cyan text */
 }
 
+/* Estilos para el botón de volver al inicio */
+.back-to-home-button {
+    display: inline-flex; /* Usar flexbox para centrar el contenido */
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Ancho y alto para hacerlo circular */
+    height: 60px;
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #007bff; /* Color azul */
+    color: white;
+    text-decoration: none;
+    font-size: 30px; /* Aumentamos el tamaño de la fuente para el icono */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Añadimos una sombra al texto para mayor contraste */
+}
+
+.back-to-home-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Aseguramos que no haya filtros de sombra ni imágenes */
+.back-to-home-button img {
+    display: none; 
+}
+
+.back-to-home-button, .back-to-home-button:hover {
+    filter: none;
+}
+
+.container {
+    padding-top: 10px; /* Ajustar el padding superior del contenedor principal */
+    padding-bottom: 10px; /* Ajustar el padding inferior del contenedor principal */
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
+    color: #e0ffff; /* Light cyan text */
+}
+padding: 10px 20px;
+    background-color: #007bff; /* Un color azul agradable */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+    background-color: #0056b3;
+}
+
