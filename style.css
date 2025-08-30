@@ -199,52 +199,152 @@ body::before {
 
 /* Styles for content sections */
 .content-section {
-    background-color: transparent; /* Changed from rgba(0, 0, 0, 0.8) to transparent */
+    background-color: rgba(0, 0, 0, 0.85); /* Aumentamos la opacidad del fondo a 0.85 */
     padding: 30px;
     border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
-    color: #333333; /* Changed from #e0ffff to a darker grey for better contrast */
+    box-shadow: none;
+    color: #ffffff; /* Aseguramos que el color del texto sea blanco puro */
 }
 
 .section-title {
-    color: #006666; /* Darker green for titles */
+    color: #ffffff; /* Blanco para títulos */
     text-align: center;
     margin-bottom: 25px;
     font-size: 2.5em;
-    text-shadow: none; /* Removed text shadow for better readability with darker text */
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.8); /* Sombra de texto más fuerte */
 }
 
 .lead-text {
     font-size: 1.3em;
     text-align: center;
     margin-bottom: 30px;
-    color: #555555; /* Darker grey for lead text */
+    color: #ffffff; /* Blanco para el texto principal */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1); /* Sombra de texto más fuerte */
 }
 
 .section-subtitle {
-    color: #008080; /* Darker green for subtitles */
+    color: #ffffff; /* Blanco para subtítulos */
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 1.8em;
-    border-bottom: 1px solid rgba(0, 230, 230, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 5px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1); /* Sombra de texto más fuerte */
 }
 
 .content-section ul li {
-    background: rgba(0, 0, 0, 0.1); /* Slightly darker background for list items */
+    background: transparent;
     margin-bottom: 8px;
     padding: 10px 15px;
     border-radius: 5px;
-    border-left: 3px solid #006666; /* Darker border for list items */
-    color: #333333; /* Ensure list item text is also dark */
+    border-left: 3px solid #ffffff; /* Borde blanco para ítems de lista */
+    color: #ffffff; /* Texto blanco para ítems de lista */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra de texto más fuerte */
 }
 
 .content-section p {
-    line-height: 1.8;
-    margin-bottom: 15px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #ffffff; /* Texto blanco para párrafos */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra de texto más fuerte */
 }
+
+.content-section h2,
+.content-section h3,
+.content-section h4 {
+    color: #ffffff; /* Texto blanco para títulos */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra de texto más fuerte */
+}
+
+.content-section {
+    background-color: rgba(0, 0, 0, 0.85); /* Aumentamos la opacidad del fondo a 0.85 */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    color: initial;
+    max-width: 900px; /* Establecemos un ancho máximo para la sección de contenido */
+    margin-left: auto; /* Centramos la sección horizontalmente */
+    margin-right: auto; /* Centramos la sección horizontalmente */
+}
+
+.section-title {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.lead-text {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.section-subtitle {
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 5px;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.content-section ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #000000;
+    color: #000000;
+    text-shadow: none;
+}
+
+.content-section p {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    text-shadow: none;
+}
+
+.content-section h2,
+.content-section h3,
+.content-section h4 {
+    color: #000000;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.content-section ul li {
+    color: #000000; /* Texto negro para elementos de lista */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto sutil */
+}
+
+
 
 .content-section ul {
     list-style-type: none;
