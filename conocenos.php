@@ -31,6 +31,7 @@ if (file_exists($lang_file)) {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conocenos.css"> <!-- New CSS file for conocenos page -->
     <title><?php echo $lang['conocenos_title']; ?></title>
     <style>
         body {
@@ -87,7 +88,84 @@ if (file_exists($lang_file)) {
         <a href="index.php" class="menu-button home-button"><?php echo $lang['home_button']; ?></a>
 
         <h1 class="page-title"><?php echo $lang['conocenos_heading']; ?></h1>
-        <p class="page-content"><?php echo $lang['conocenos_content']; ?></p>
+        <div class="conocenos-section">
+            <h2>Quiénes Somos?</h2>
+            <p>OMANXUS nace con el objetivo de unir la 🚀 innovación tecnológica, la ⚙️ ingeniería aplicada y la 📈 mejora continua en una sola propuesta integral. Colaboramos con empresas que necesitan soluciones robustas, personalizadas y sostenibles en entornos complejos y cambiantes.</p>
+
+            <h2>👁️ Visión</h2>
+            <p>Ofrecer un enfoque sin límites a los desafíos actuales:</p>
+            <ul>
+                <li>🏭 Conocimiento profundo de los sectores industriales</li>
+                <li>💻 Dominio de nuevas tecnologías y herramientas digitales</li>
+                <li>🎯 Experiencia operativa en planificación, ejecución y optimización</li>
+            </ul>
+
+            <h2>📋 Metodología</h2>
+            <p>Nuestra metodología combina análisis, innovación y ejecución:</p>
+            <ol>
+                <li>🔍 Diagnóstico y auditoría de procesos</li>
+                <li>⚖️ Valoración de alternativas y selección de soluciones</li>
+                <li>🚀 Implantación eficiente y acompañamiento</li>
+                <li>🔄 Mejora continua y mantenimiento de calidad</li>
+            </ol>
+
+            <h2>🛠️ Áreas de Actividad</h2>
+            <ul>
+                <li>⚙️ Ingeniería multidisciplinar de procesos industriales</li>
+                <li>🏭 Rediseño y automatización de plantas</li>
+                <li>📊 Consultoría estratégica y organizacional</li>
+                <li>🔧 Fabricación de equipos y máquinas especiales a medida</li>
+                <li>🗝️ Proyectos llave en mano</li>
+                <li>🧬 Sectores: biotecnología, 🐟 pesca, 🌱 medio ambiente, 🍽️ alimentación, ⚡ energía</li>
+                <li>🎓 Formación, 🤝 outsourcing, 📦 sistemas logísticos</li>
+            </ul>
+
+            <h2>💼 Procesos de Negocio</h2>
+            <p>⚠️ Detectamos necesidades como:</p>
+            <ul>
+                <li>→ 💰 Costes elevados, duplicidades, errores operativos</li>
+                <li>→ 📋 Falta de procedimientos claros y personal capacitado</li>
+            </ul>
+            <p>✅ Proponemos soluciones:</p>
+            <ul>
+                <li>→ 🔄 Reingeniería de procesos</li>
+                <li>→ 🤖 Automatización y control</li>
+                <li>→ 📝 Procedimentación y mejora continua</li>
+                <li>→ 🏢 Transformación organizativa</li>
+            </ul>
+
+            <h2>🏭 Sistemas Productivos</h2>
+            <ul>
+                <li>📊 Análisis y rediseño de flujos</li>
+                <li>📐 Optimización de layouts y espacios</li>
+                <li>🗓️ Planificación, scheduling, producción inteligente</li>
+                <li>🔬 Evaluación de tecnologías y externalización</li>
+            </ul>
+
+            <h2>📈 Procedimientos y Mejora</h2>
+            <ul>
+                <li>🛠️ Mejora de procesos y software</li>
+                <li>🎓 Formación, integración y gestión del cambio</li>
+                <li>🔒 Auditorías de seguridad y eficiencia</li>
+                <li>🗝️ Proyectos llave en mano</li>
+            </ul>
+
+            <h2>🔍 Auditoría de Factoría</h2>
+            <ul>
+                <li>🎯 Identificación de oportunidades</li>
+                <li>💡 Cuantificación de ahorros y plan de acción</li>
+                <li>💻 Sistemas de información y planificación productiva</li>
+            </ul>
+
+            <h2>🎯 Estrategia Empresarial</h2>
+            <ul>
+                <li>📊 DAFO completo</li>
+                <li>🏆 Benchmarking competitivo</li>
+                <li>⭐ Identificación de ventajas sostenibles</li>
+                <li>📌 Definición e implementación de KPIs</li>
+            </ul>
+        </div>
+        <p class="copyright">Copyright © 2025 Omanxus.</p>
     </div>
 
     <!-- Bootstrap JS y Popper.js -->
