@@ -72,6 +72,9 @@ $lang = array(
     'contact_us_email' => 'اتصل بنا للحصول على مزيد من المعلومات: info@omanxus.com',
     'conocenos_button' => 'معلومات عنا',
     'blog_button' => 'مدونة',
-    'contacto_button' => 'اتصل بنا'
+    'contacto_button' => 'اتصل بنا',
+    'home_button' => 'الصفحة الرئيسية',
+    'conocenos_heading' => 'تعرف علينا',
+    'conocenos_content' => 'هنا ستجد معلومات عنا.'
 );
 ?>
