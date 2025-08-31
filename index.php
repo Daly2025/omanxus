@@ -33,6 +33,7 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="homepage-background">
+    <canvas id="matrixCanvas"></canvas>
     <img id="logo" src="images/logo index.png" alt="Logo">
     <div class="background-container"></div>
     <h1 class="main-title">OMANXUS</h1>
@@ -87,6 +88,7 @@ if (file_exists($lang_file)) {
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="matrix.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var ingenieriaButton = document.querySelector('a[href="ingenieria_multidisciplinar.php"]');
@@ -121,7 +123,7 @@ if (file_exists($lang_file)) {
                     setTimeout(function() {
                         document.body.removeChild(previewDiv);
                         window.location.href = 'ingenieria_multidisciplinar.php';
-                    }, 2000); // Display for 2 seconds (2000 milliseconds)
+                    }, 1000); // Display for 1 second (1000 milliseconds)
                 });
             }
 
