@@ -77,6 +77,10 @@ $lang['turnkey_projects_list_item_4'] = 'Construcción e instalación';
 $lang['turnkey_projects_list_item_5'] = 'Puesta en marcha y entrega funcional';
 $lang['turnkey_projects_conclusion_paragraph'] = 'Esta fórmula permite a nuestros clientes centrarse en su negocio, mientras OMANXUS garantiza una ejecución profesional, eficiente y segura.';
 
+$lang['conocenos_button'] = 'CONÓCENOS';
+$lang['blog_button'] = 'BLOG';
+$lang['contacto_button'] = 'CONTACTO';
+
 $lang['contact_us_question'] = '¿Estás interesado en desarrollar tu próximo proyecto con un enfoque multidisciplinar, innovador y eficaz?';
 $lang['contact_us_email'] = 'Contáctanos: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>';
 
