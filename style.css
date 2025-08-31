@@ -25,7 +25,7 @@ body::before {
 .language-selector {
     position: absolute;
     top: 20px;
-    right: 100px; /* Adjusted to move flags further left */
+    right: 10px; /* Adjusted to move flags further left */
     z-index: 100;
     display: flex; /* Para que las banderas se muestren en línea */
     gap: 5px; /* Espacio entre las banderas */
@@ -544,53 +544,67 @@ body.homepage-background {
 
 .language-selector {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px; /* Ajustado para que las banderas estén más a la derecha */
     z-index: 100;
-    display: flex;
-    gap: 5px;
+    display: flex; /* Para que las banderas se muestren en línea */
+    gap: 5px; /* Espacio entre las banderas */
 }
 
 .servicios-dropdown {
     position: absolute;
-    top: 10px; /* Ajusta según sea necesario para alinear con las banderas */
-    right: 250px; /* Ajustado para mover el botón Servicios más a la izquierda */
+    top: 20px; /* Alinea con el language-selector */
+    right: 250px; /* Ajusta esta posición para que no se solape con las banderas */
     z-index: 100;
     margin-top: 0;
     transform: none;
+    display: flex; /* Añadido para que los botones se muestren en línea */
+    gap: 10px; /* Espacio entre los botones */
+    align-items: center; /* Alinea verticalmente los botones */
 }
 
 .servicios-dropdown .menu-button {
-    /* Estilos para el botón Servicios */
-    background-color: #007bff; /* Fondo azul */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
+    /* Estilos para el botón Servicios y los nuevos botones */
+    background-color: rgba(0, 50, 100, 0.8); /* Semi-transparent blue */
+    color: #00e6e6;
+    border: 2px solid #00e6e6;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.5); /* Sombra para el efecto de brillo */
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; /* Limit button width */
+    position: relative; /* Para posibles líneas desde el botón */
+    width: auto; /* Ajusta el ancho automáticamente */
+    cursor: pointer;
 }
 
 .servicios-dropdown .menu-button:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    background-color: rgba(0, 230, 230, 0.2); /* Lighter cyan on hover */
+    color: #00ffff;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6); /* Brillo más intenso al pasar el ratón */
+    transform: translateY(-3px) scale(1.02);
+    border-color: #00ffff;
 }
 
 .servicios-dropdown .menu-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre grupos de botones */
-    margin-top: 10px; /* Espacio entre el botón Servicios y el contenido desplegable */
+    /* display: none; /* Asegura que el menú desplegable esté oculto por defecto */
+    position: absolute;
+    top: 100%; /* Coloca el menú debajo del botón */
+    left: 0; /* Alinea el menú con el botón */
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el desplegable */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    left: auto; /* Elimina left: 50% */
-    right: 0; /* Alinea el desplegable a la derecha del botón */
-    transform: none; /* Elimina transform: translateX(-50%) */
     z-index: 1000;
+    flex-direction: column; /* Apila los elementos del menú desplegable */
+    gap: 10px;
 }
 
 .servicios-dropdown .menu-container.hidden {

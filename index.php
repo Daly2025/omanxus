@@ -48,6 +48,10 @@ if (file_exists($lang_file)) {
         <!-- Eliminamos el carrusel y añadimos el nuevo menú -->
         <div class="servicios-dropdown">
             <button id="serviciosButton" class="menu-button"><?php echo $lang['services_button']; ?></button>
+            <!-- Nuevos botones añadidos aquí -->
+            <button id="conocenosButton" class="menu-button">CONOCENOS</button>
+            <button id="contactoButton" class="menu-button">CONTACTO</button>
+            <button id="blogButton" class="menu-button">BLOG</button>
             <div id="menuContent" class="menu-container hidden">
                 <!-- Reemplazamos la lista con botones -->
 
