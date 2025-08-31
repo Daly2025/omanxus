@@ -27,6 +27,8 @@ $lang['card_title_13'] = 'BIOTECNOLOGÍA APLICADA AL SECTOR MÉDICO';
 $lang['card_title_14'] = 'TEAXUL ENEXYUL INDUS';
 $lang['card_title_15'] = 'FORMACIÓN';
 
+$lang['services_button'] = 'Servicios';
+
 // New keys for ingenieria_multidisciplinar.php
 $lang['multidisciplinary_engineering_title'] = 'INGENIERÍA MULTIDISCIPLINAR';
 $lang['multidisciplinary_engineering_applied_title'] = 'Ingeniería Multidisciplinar Aplicada';

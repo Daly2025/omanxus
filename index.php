@@ -28,7 +28,6 @@ if (file_exists($lang_file)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omanxus</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -48,7 +47,7 @@ if (file_exists($lang_file)) {
     <div class="container">
         <!-- Eliminamos el carrusel y añadimos el nuevo menú -->
         <div class="servicios-dropdown">
-            <button id="serviciosButton" class="menu-button">Servicios</button>
+            <button id="serviciosButton" class="menu-button"><?php echo $lang['services_button']; ?></button>
             <div id="menuContent" class="menu-container hidden">
                 <!-- Reemplazamos la lista con botones -->
 

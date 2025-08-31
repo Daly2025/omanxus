@@ -181,6 +181,39 @@ body::before {
         top: 5px;
         right: 5px;
     }
+
+    .servicios-dropdown {
+        top: 5px; /* Ajusta la posición superior en móviles */
+        right: 100px; /* Ajusta la posición derecha en móviles para evitar solapamiento */
+    }
+
+    .servicios-dropdown .menu-container {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%; /* Ancho del menú desplegable en móviles */
+        min-width: unset; /* Eliminar min-width */
+        box-sizing: border-box;
+        /* Asegurarse de que el display sea flex cuando esté activo */
+    }
+
+    .servicios-dropdown .button-group {
+        flex-direction: column; /* Apilar los botones en móviles */
+        align-items: center;
+    }
+
+    .servicios-dropdown .menu-button {
+        width: 90%; /* Ancho de los botones dentro del menú en móviles */
+        max-width: 250px; /* Limitar el ancho máximo */
+        margin: 5px auto; /* Centrar los botones */
+    }
+
+    .servicios-dropdown .menu-button.formacion {
+        width: 70px;
+        height: 70px;
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -194,6 +227,26 @@ body::before {
         width: 80px;
         height: 80px;
         font-size: 0.6em;
+    }
+
+    .servicios-dropdown {
+        right: 80px; /* Ajuste adicional para pantallas muy pequeñas */
+    }
+
+    .servicios-dropdown .menu-container {
+        width: 95%; /* Ajuste para pantallas muy pequeñas */
+    }
+
+    .servicios-dropdown .menu-button {
+        width: 95%;
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .servicios-dropdown .menu-button.formacion {
+        width: 60px;
+        height: 60px;
+        font-size: 0.7em;
     }
 }
 

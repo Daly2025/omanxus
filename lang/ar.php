@@ -24,9 +24,13 @@ $lang = array(
     'card_title_11' => 'تربية الأحياء المائية في البحر',
     'card_title_12' => 'التكنولوجيا الحيوية المطبقة على قطاع البيئة',
     'card_title_13' => 'التكنولوجيا الحيوية المطبقة على القطاع الطبي',
-    'card_title_14' => 'الصناعة',
-    'card_title_15' => 'التدريب',
-    'multidisciplinary_engineering_title' => 'الهندسة متعددة التخصصات',
+    'card_title_14' => 'TEAXUL ENEXYUL INDUS',
+    'card_title_15' => 'FORMAÇÃO',
+
+    'services_button' => 'خدمات',  // Arabic for 'Services'
+
+    // New keys for ingenieria_multidisciplinar.php
+    'multidisciplinary_engineering_title' => 'ENGENHARIA MULTIDISCIPLINAR',
     'multidisciplinary_engineering_lead_text' => 'نحن نقدم حلولًا هندسية متعددة التخصصات، تجمع بين مختلف التخصصات لتطوير مشاريع مبتكرة وفعالة.',
     'multidisciplinary_engineering_intro_paragraph' => 'في عالم اليوم المعقد، تتطلب التحديات حلولًا تتجاوز التخصصات التقليدية. تتيح لنا الهندسة متعددة التخصصات دمج المعرفة والتقنيات من مجالات مختلفة، مثل الميكانيكا والإلكترونيات والبرمجيات والكيمياء، لإنشاء أنظمة ومنتجات شاملة ومحسنة.',
     'project_management_title' => 'إدارة المشاريع',

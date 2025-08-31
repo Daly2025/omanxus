@@ -27,6 +27,8 @@ $lang = array(
     'card_title_14' => 'TEAXUL ENEXYUL INDUS',
     'card_title_15' => 'TRAINING',
 
+    'services_button' => 'Services',
+
     // New keys for ingenieria_multidisciplinar.php
     'multidisciplinary_engineering_title' => 'MULTIDISCIPLINARY ENGINEERING',
     'multidisciplinary_engineering_applied_title' => 'Applied Multidisciplinary Engineering',
