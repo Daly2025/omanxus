@@ -10,7 +10,7 @@ include 'lang/' . (isset($_SESSION['lang']) ? $_SESSION['lang'] : 'es') . '.php'
     <title><?php echo $lang['conocenos_title']; ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-image: url('images/sobre1.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
     <header>
         <!-- Aquí puedes incluir tu menú de navegación, similar al de index.php -->
         <nav>
