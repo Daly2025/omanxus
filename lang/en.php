@@ -78,6 +78,8 @@ $lang = array(
     'turnkey_projects_conclusion_paragraph' => 'This formula allows our clients to focus on their business, while OMANXUS guarantees professional, efficient, and safe execution.',
 
     'contact_us_question' => 'Are you interested in developing your next project with a multidisciplinary, innovative, and effective approach?',
-    'contact_us_email' => 'Contact us: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>'
+    'conocenos_button' => 'About Us',
+    'blog_button' => 'Blog',
+    'contacto_button' => 'Contact Us'
 );
 ?>

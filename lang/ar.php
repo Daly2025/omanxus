@@ -69,6 +69,9 @@ $lang = array(
     'turnkey_projects_list_item_4' => 'الاختبار والتشغيل.',
     'turnkey_projects_list_item_5' => 'التدريب والدعم بعد التسليم.',
     'turnkey_projects_conclusion_paragraph' => 'مع حلولنا الجاهزة، يمكنك أن تكون واثقًا من أن مشروعك سيتم تنفيذه بكفاءة وفعالية، مما يقلل من المخاطر ويزيد من العائد على الاستثمار.',
-    'contact_us_email' => 'اتصل بنا للحصول على مزيد من المعلومات: info@omanxus.com'
+    'contact_us_email' => 'اتصل بنا للحصول على مزيد من المعلومات: info@omanxus.com',
+    'conocenos_button' => 'معلومات عنا',
+    'blog_button' => 'مدونة',
+    'contacto_button' => 'اتصل بنا'
 );
 ?>
