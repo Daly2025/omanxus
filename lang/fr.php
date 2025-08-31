@@ -79,8 +79,14 @@ $lang = array(
 
     'contact_us_question' => 'Êtes-vous intéressé à développer votre prochain projet avec une approche multidisciplinaire, innovante et efficace?',
     'contact_us_email' => 'Contactez-nous pour plus d\'informations : info@omanxus.com',
-    'conocenos_button' => 'À propos de nous',
-    'blog_button' => 'Blog',
-    'contacto_button' => 'Contactez-nous'
+    'conocenos_button' => 'À PROPOS',
+    'blog_button' => 'BLOG',
+    'contacto_button' => 'CONTACT',
+    
+    'home_button' => 'Accueil', // Añade esta línea
+    
+    'conocenos_title' => 'À Propos de Nous', // Añade esta línea
+    'conocenos_heading' => 'Apprenez à Nous Connaître', // Añade esta línea
+    'conocenos_content' => 'Ici, vous trouverez des informations sur nous.', // Añade esta línea
 );
 ?>
