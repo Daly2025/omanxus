@@ -3,22 +3,31 @@
 .conocenos-section {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent; /* Cambiado de rgba(255, 255, 255, 0.8) a transparente */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: none; /* Eliminado el box-shadow para un look más limpio */
 }
 
 .conocenos-section h2 {
-    color: #333;
+    color: #000; /* Negro puro para máxima visibilidad */
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .conocenos-section p,
-.conocenos-section ul {
-    color: #555;
+.conocenos-section ul li,
+.metodologia-list li { /* Incluimos la nueva clase para que también sea negra */
+    color: #000; /* Negro puro para máxima visibilidad */
     line-height: 1.6;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: none; /* Eliminamos la sombra de texto si no es necesaria con texto negro */
 }
+
+/* Si habías añadido una sombra de texto específica para .metodologia-list li, la eliminamos o ajustamos */
+/* .metodologia-list li {
+    text-shadow: none; 
+} */
 
 .conocenos-section ul {
     list-style-type: disc;

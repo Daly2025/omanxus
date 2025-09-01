@@ -102,7 +102,7 @@ if (file_exists($lang_file)) {
 
             <h2>📋 Metodología</h2>
             <p>Nuestra metodología combina análisis, innovación y ejecución:</p>
-            <ol>
+            <ol class="metodologia-list">
                 <li>🔍 Diagnóstico y auditoría de procesos</li>
                 <li>⚖️ Valoración de alternativas y selección de soluciones</li>
                 <li>🚀 Implantación eficiente y acompañamiento</li>
