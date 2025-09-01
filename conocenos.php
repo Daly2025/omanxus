@@ -88,6 +88,10 @@ if (file_exists($lang_file)) {
         <a href="index.php" class="menu-button home-button"><?php echo $lang['home_button']; ?></a>
 
         <h1 class="page-title"><?php echo $lang['conocenos_heading']; ?></h1>
+        <!-- Nuevo botón añadido aquí -->
+        <div class="text-center mt-4">
+            <a href="investigador_principal.php" class="btn btn-primary"><?php echo $lang['investigador_principal_title']; ?></a>
+        </div>
         <div class="conocenos-section">
             <h2>Quiénes Somos?</h2>
             <p>OMANXUS nace con el objetivo de unir la 🚀 innovación tecnológica, la ⚙️ ingeniería aplicada y la 📈 mejora continua en una sola propuesta integral. Colaboramos con empresas que necesitan soluciones robustas, personalizadas y sostenibles en entornos complejos y cambiantes.</p>
