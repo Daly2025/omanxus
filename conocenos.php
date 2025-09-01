@@ -164,6 +164,11 @@ if (file_exists($lang_file)) {
                 <li>⭐ Identificación de ventajas sostenibles</li>
                 <li>📌 Definición e implementación de KPIs</li>
             </ul>
+
+            <!-- Nuevo botón añadido aquí -->
+            <div class="text-center mt-4">
+                <a href="investigador_principal.php" class="btn btn-primary">SOBRE EL INVESTIGADOR PRINCIPAL</a>
+            </div>
         </div>
         <p class="copyright">Copyright © 2025 Omanxus.</p>
     </div>

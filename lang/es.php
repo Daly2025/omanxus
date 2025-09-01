@@ -86,7 +86,8 @@ $lang['home_button'] = 'Inicio'; // Añade esta línea
 $lang['contact_us_question'] = '¿Estás interesado en desarrollar tu próximo proyecto con un enfoque multidisciplinar, innovador y eficaz?';
 $lang['contact_us_email'] = 'Contáctanos: <a href="mailto:comercial@omanxus.com">comercial@omanxus.com</a>';
 
-$lang['conocenos_title'] = 'Conócenos'; // Añade esta línea
+$lang['conocenos_title'] = 'Conócenos';
+$lang['investigador_principal_title'] = 'Investigador Principal';
 $lang['conocenos_heading'] = 'Conócenos'; // Añade esta línea
 $lang['conocenos_content'] = 'Aquí encontrarás información sobre nosotros.'; // Añade esta línea
 
