@@ -213,7 +213,18 @@
 .carousel-inner .carousel-item img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: 400px; /* Define una altura fija para todas las imágenes del carrusel */
-    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionarla */
+    /* Carousel Image Styling */
+    .carousel-inner {
+        max-height: 400px; /* Altura máxima para el carrusel */
+        overflow: hidden; /* Oculta cualquier parte de la imagen que exceda esta altura */
+    }
+    
+    .carousel-item img {
+        height: 100%; /* La imagen ocupará el 100% de la altura del carousel-inner */
+        width: auto; /* Permite que el ancho se ajuste automáticamente para mantener la proporción */
+        object-fit: contain; /* Asegura que la imagen completa sea visible dentro del contenedor */
+        object-position: center; /* Centra la imagen */
+    }
     /* Puedes probar 'contain' si prefieres que la imagen se ajuste completamente dentro del área, mostrando barras si es necesario */
 }
 
