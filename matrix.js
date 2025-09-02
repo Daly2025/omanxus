@@ -17,13 +17,29 @@ for (let i = 0; i < columns; i++) {
     drops[i] = 1;
 }
 
-let animationInterval = setInterval(draw, 30);
+let animationInterval;
 
-// Stop the Matrix effect and hide the canvas after 2 seconds (2000 milliseconds)
-setTimeout(() => {
-    clearInterval(animationInterval);
-    canvas.style.display = 'none';
-}, 2000); // Change this value to adjust the duration (e.g., 1000 for 1 second)
+function startMatrixEffect() {
+    // Asegúrate de que el canvas esté visible al iniciar el efecto
+    canvas.style.display = 'block';
+    // Reinicia las gotas para un nuevo efecto
+    for (let i = 0; i < drops.length; i++) {
+        drops[i] = 1;
+    }
+
+    // Limpia cualquier intervalo anterior para evitar múltiples ejecuciones
+    if (animationInterval) {
+        clearInterval(animationInterval);
+    }
+
+    animationInterval = setInterval(draw, 30);
+
+    // Detiene el efecto Matrix y oculta el canvas después de 2 segundos (2000 milisegundos)
+    setTimeout(() => {
+        clearInterval(animationInterval);
+        canvas.style.display = 'none';
+    }, 2000); // Cambia este valor para ajustar la duración (ej. 1000 para 1 segundo)
+}
 
 function draw() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';

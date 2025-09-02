@@ -91,6 +91,9 @@ if (file_exists($lang_file)) {
     <script src="matrix.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Start the Matrix effect when the page loads
+            startMatrixEffect();
+
             var ingenieriaButton = document.querySelector('a[href="ingenieria_multidisciplinar.php"]');
             if (ingenieriaButton) {
                 ingenieriaButton.addEventListener('click', function(event) {

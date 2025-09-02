@@ -207,3 +207,20 @@
     0% { box-shadow: 0 0 15px rgba(0, 198, 255, 0.8), 0 0 30px rgba(0, 198, 255, 0.6), 0 0 50px rgba(0, 198, 255, 0.4); }
     100% { box-shadow: 0 0 20px rgba(0, 198, 255, 0.9), 0 0 40px rgba(0, 198, 255, 0.7), 0 0 60px rgba(0, 198, 255, 0.5); }
 }
+
+
+/* Estilos para el carrusel de imágenes en investigador_principal.php */
+.carousel-inner .carousel-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 400px; /* Define una altura fija para todas las imágenes del carrusel */
+    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionarla */
+    /* Puedes probar 'contain' si prefieres que la imagen se ajuste completamente dentro del área, mostrando barras si es necesario */
+}
+
+/* Opcional: Ajustar el tamaño del carrusel en sí si es necesario */
+#imageCarousel {
+    max-width: 800px; /* O el ancho que desees para el carrusel */
+    margin: 20px auto; /* Centra el carrusel y añade un poco de margen */
+    border-radius: 10px; /* Bordes redondeados para el carrusel */
+    overflow: hidden; /* Asegura que las imágenes redondeadas no se salgan */
+}

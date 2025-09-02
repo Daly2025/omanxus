@@ -43,6 +43,7 @@ if (file_exists($lang_file)) {
     </style>
 </head>
 <body>
+    <canvas id="matrixCanvas" style="position: fixed; top: 0; left: 0; z-index: 9999; display: none;"></canvas>
     <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
         <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
@@ -180,16 +181,34 @@ if (file_exists($lang_file)) {
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="particles-effect.js"></script>
+    <script src="matrix.js"></script> <!-- Asegúrate de que matrix.js se carga después de particles-effect.js -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var serviciosButton = document.getElementById('serviciosButton');
             var menuContent = document.getElementById('menuContent');
+            // Selecciona ambos botones si quieres que ambos activen el efecto
+            var investigadorPrincipalButtons = document.querySelectorAll('a[href="investigador_principal.php"]');
 
             if (serviciosButton && menuContent) {
                 serviciosButton.addEventListener('click', function() {
                     menuContent.classList.toggle('hidden');
                 });
             }
+
+            // Añade el evento click a cada botón del investigador principal
+            investigadorPrincipalButtons.forEach(function(button) {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Previene la navegación inmediata
+                    // Llama a la función del efecto Matrix si existe
+                    if (typeof startMatrixEffect === 'function') {
+                        startMatrixEffect();
+                    }
+                    // Opcional: Retrasa la navegación para que el efecto sea visible
+                    setTimeout(function() {
+                        window.location.href = 'investigador_principal.php';
+                    }, 2000); // Retrasa 2 segundos, ajusta según la duración del efecto en matrix.js
+                });
+            });
         });
     </script>
 </body>
