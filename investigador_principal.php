@@ -27,6 +27,48 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="conocenos.css">
 </head>
 <body>
+    <div class="language-selector">
+        <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
+        <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
+        <a href="?lang=fr"><img src="https://flagcdn.com/fr.svg" alt="<?php echo $lang['lang_fr']; ?>"></a>
+        <a href="?lang=pt"><img src="https://flagcdn.com/pt.svg" alt="<?php echo $lang['lang_pt']; ?>"></a>
+        <a href="?lang=ar"><img src="https://flagcdn.com/sa.svg" alt="<?php echo $lang['lang_ar']; ?>"></a>
+    </div>
+
+    <div class="servicios-dropdown">
+        <button class="menu-button" id="serviciosButton"><?php echo $lang['services_button']; ?></button>
+        <a href="conocenos.php" class="menu-button"><?php echo $lang['conocenos_button']; ?></a>
+        <a href="blog.php" class="menu-button"><?php echo $lang['blog_button']; ?></a>
+        <a href="contacto.php" class="menu-button"><?php echo $lang['contacto_button']; ?></a>
+        <div id="menuContent" class="menu-container hidden">
+            <div class="button-group">
+                <a href="ingenieria_multidisciplinar.php" class="menu-button"><?php echo $lang['card_title_1']; ?></a>
+                <a href="pesaje_en_barcos.php" class="menu-button"><?php echo $lang['card_title_2']; ?></a>
+                <a href="pesaje_industrial.php" class="menu-button"><?php echo $lang['card_title_3']; ?></a>
+            </div>
+            <div class="button-group">
+                <a href="fabricacion_maquinaria_especial.php" class="menu-button"><?php echo $lang['card_title_4']; ?></a>
+                <a href="investigacion_invencion_multidisciplinar.php" class="menu-button"><?php echo $lang['card_title_5']; ?></a>
+                <a href="sector_pesca.php" class="menu-button"><?php echo $lang['card_title_6']; ?></a>
+            </div>
+            <div class="button-group">
+                <a href="puertos.php" class="menu-button"><?php echo $lang['card_title_7']; ?></a>
+                <a href="sector_frigorificos.php" class="menu-button"><?php echo $lang['card_title_8']; ?></a>
+                <a href="sala_procesado.php" class="menu-button"><?php echo $lang['card_title_9']; ?></a>
+            </div>
+            <div class="button-group">
+                <a href="sector_conservero.php" class="menu-button"><?php echo $lang['card_title_10']; ?></a>
+                <a href="acuicultura_en_el_mar.php" class="menu-button"><?php echo $lang['card_title_11']; ?></a>
+                <a href="biotecnologia_aplicada_medio_ambiente.php" class="menu-button"><?php echo $lang['card_title_12']; ?></a>
+            </div>
+            <div class="button-group">
+                <a href="biotecnologia_aplicada_medico.php" class="menu-button"><?php echo $lang['card_title_13']; ?></a>
+                <a href="energyxul_industrial.php" class="menu-button"><?php echo $lang['card_title_14']; ?></a>
+                <a href="formacion.php" class="menu-button menu-button-circle"><?php echo $lang['card_title_15']; ?></a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h1 class="page-title">Sobre el Investigador Principal</h1>
         <div class="conocenos-section">
@@ -70,5 +112,17 @@ if (file_exists($lang_file)) {
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var serviciosButton = document.getElementById('serviciosButton');
+            var menuContent = document.getElementById('menuContent');
+
+            if (serviciosButton && menuContent) {
+                serviciosButton.addEventListener('click', function() {
+                    menuContent.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
