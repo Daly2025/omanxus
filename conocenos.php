@@ -87,7 +87,7 @@ if (file_exists($lang_file)) {
         </div>
         <a href="index.php" class="menu-button home-button"><?php echo $lang['home_button']; ?></a>
 
-        <h1 class="page-title"><?php echo $lang['conocenos_heading']; ?></h1>
+        <!-- <h1 class="page-title"><?php echo $lang['conocenos_heading']; ?></h1> -->
         <!-- Nuevo botón añadido aquí -->
         <div class="text-center mt-4">
             <a href="investigador_principal.php" class="btn btn-primary"><?php echo $lang['investigador_principal_title']; ?></a>

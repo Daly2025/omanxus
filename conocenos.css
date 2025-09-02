@@ -71,6 +71,23 @@
     box-shadow: 0 0 5px rgba(97, 218, 251, 0.3), 0 0 10px rgba(97, 218, 251, 0.2);
 }
 
+/* Estilos para el botón "SOBRE EL INVESTIGADOR PRINCIPAL" con efecto de brillo pulsante */
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* Degradado de azul a azul claro */
+    border: none;
+    border-radius: 25px; /* Bordes más redondeados */
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra de texto sutil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra de caja para profundidad */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    position: relative; /* Necesario para el pseudo-elemento del brillo */
+    overflow: hidden; /* Oculta el brillo fuera del botón */
+    z-index: 1; /* Asegura que el botón esté por encima del brillo */
+}
+
 .btn-primary:hover {
     background: linear-gradient(45deg, #00c6ff, #007bff); /* Invertir degradado al pasar el ratón */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
@@ -80,4 +97,113 @@
 .btn-primary:active {
     transform: translateY(0); /* Volver a la posición original al hacer clic */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+}
+
+/* Efecto de brillo pulsante */
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5); /* Color del brillo (blanco semitransparente) */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: pulse-glow 2s infinite;
+    z-index: -1; /* Detrás del contenido del botón */
+}
+
+@keyframes pulse-glow {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    50% {
+        width: 150%;
+        height: 150%;
+        opacity: 0.3;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+/* Estilos para el botón "SOBRE EL INVESTIGADOR PRINCIPAL" - Estilo Futurista/Circular */
+/* Estilos para el botón "SOBRE EL INVESTIGADOR PRINCIPAL" - Estilo de la Imagen (Revisado) */
+.btn-primary {
+    /* Fondo con gradiente radial para simular el brillo central */
+    background: radial-gradient(circle at center, rgba(0, 220, 255, 0.3) 0%, rgba(0, 123, 255, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+    border: 2px solid #00c6ff; /* Borde azul brillante */
+    border-radius: 50%; /* Hace el botón circular */
+    width: 200px; /* Ancho fijo para el círculo */
+    height: 200px; /* Alto fijo para el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e0ffff; /* Texto blanco azulado para contraste */
+    /* Múltiples sombras para un efecto de resplandor más complejo */
+    text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff, 0 0 30px #00c6ff; 
+    box-shadow: 
+        0 0 15px rgba(0, 198, 255, 0.8), /* Resplandor interno */
+        0 0 30px rgba(0, 198, 255, 0.6), /* Resplandor medio */
+        0 0 50px rgba(0, 198, 255, 0.4); /* Resplandor externo */
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    /* Animación sutil para un efecto de "vida" */
+    animation: pulse-subtle 3s infinite alternate;
+}
+
+.btn-primary:hover {
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.4) 0%, rgba(0, 150, 255, 0.3) 50%, rgba(0, 0, 0, 0.2) 100%);
+    border-color: #e0ffff; /* Borde más claro al pasar el ratón */
+    box-shadow: 
+        0 0 25px rgba(0, 220, 255, 1), 
+        0 0 50px rgba(0, 220, 255, 0.8), 
+        0 0 80px rgba(0, 220, 255, 0.6); /* Resplandor mucho más intenso */
+    transform: scale(1.08); /* Se agranda un poco más al pasar el ratón */
+}
+
+.btn-primary:active {
+    transform: scale(0.95); /* Pequeño encogimiento al hacer clic */
+    box-shadow: 
+        0 0 10px rgba(0, 198, 255, 0.6),
+        0 0 20px rgba(0, 198, 255, 0.4),
+        0 0 30px rgba(0, 198, 255, 0.2);
+}
+
+/* Efecto de onda al hacer clic (opcional, para un toque más interactivo) */
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4); /* Color de la onda */
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+}
+
+.btn-primary:active::after {
+    opacity: 1;
+    transform: scale(2); /* La onda se expande */
+    transition: 0s; /* Sin transición al inicio de la onda */
+}
+
+/* Keyframes para la animación sutil de pulsación */
+@keyframes pulse-subtle {
+    0% { box-shadow: 0 0 15px rgba(0, 198, 255, 0.8), 0 0 30px rgba(0, 198, 255, 0.6), 0 0 50px rgba(0, 198, 255, 0.4); }
+    100% { box-shadow: 0 0 20px rgba(0, 198, 255, 0.9), 0 0 40px rgba(0, 198, 255, 0.7), 0 0 60px rgba(0, 198, 255, 0.5); }
 }
