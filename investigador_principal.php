@@ -26,7 +26,7 @@ if (file_exists($lang_file)) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="conocenos.css">
 </head>
-<body>
+<body class="investigador-principal-page">
     <div class="language-selector">
         <a href="?lang=es"><img src="https://flagcdn.com/es.svg" alt="<?php echo $lang['lang_es']; ?>"></a>
         <a href="?lang=en"><img src="https://flagcdn.com/gb.svg" alt="<?php echo $lang['lang_en']; ?>"></a>
