@@ -132,17 +132,25 @@ if (file_exists($lang_file)) {
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="light-bulbs.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var serviciosButton = document.getElementById('serviciosButton');
-            var menuContent = document.getElementById('menuContent');
+        var serviciosButton = document.getElementById('serviciosButton');
+        var menuContent = document.getElementById('menuContent');
 
-            if (serviciosButton && menuContent) {
-                serviciosButton.addEventListener('click', function() {
-                    menuContent.classList.toggle('hidden');
-                });
-            }
-        });
+        if (serviciosButton && menuContent) {
+            serviciosButton.addEventListener('click', function() {
+                menuContent.classList.toggle('hidden');
+            });
+
+            // Close the dropdown if the user clicks outside of it
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('#serviciosButton') && !menuContent.contains(event.target)) {
+                    if (!menuContent.classList.contains('hidden')) {
+                        menuContent.classList.add('hidden');
+                    }
+                }
+            });
+        }
     </script>
 </body>
 </html>

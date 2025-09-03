@@ -680,3 +680,201 @@ body.homepage-background {
     color: #000000; /* Texto negro para elementos de lista */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto sutil */
 }
+
+#light-bulbs-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.investigador-principal-page {
+    position: relative;
+    z-index: 1;
+}
+.container {
+    padding-top: 10px; /* Ajustar el padding superior del contenedor principal */
+    padding-bottom: 10px; /* Ajustar el padding inferior del contenedor principal */
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
+    color: #e0ffff; /* Light cyan text */
+}
+
+/* Estilos para el botón de volver al inicio */
+.back-to-home-button {
+    display: inline-flex; /* Usar flexbox para centrar el contenido */
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Ancho y alto para hacerlo circular */
+    height: 60px;
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #007bff; /* Color azul */
+    color: white;
+    text-decoration: none;
+    font-size: 30px; /* Aumentamos el tamaño de la fuente para el icono */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Añadimos una sombra al texto para mayor contraste */
+}
+
+.back-to-home-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Aseguramos que no haya filtros de sombra ni imágenes */
+.back-to-home-button img {
+    display: none; 
+}
+
+.back-to-home-button, .back-to-home-button:hover {
+    filter: none;
+}
+
+.container {
+    padding-top: 10px; /* Ajustar el padding superior del contenedor principal */
+    padding-bottom: 10px; /* Ajustar el padding inferior del contenedor principal */
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.3);
+    color: #e0ffff; /* Light cyan text */
+}
+
+.back-to-home-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Un color azul agradable */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+    background-color: #0056b3;
+}
+
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 10px; /* Ajustado para que las banderas estén más a la derecha */
+    z-index: 100;
+    display: flex; /* Para que las banderas se muestren en línea */
+    gap: 5px; /* Espacio entre las banderas */
+}
+
+.servicios-dropdown {
+    position: absolute;
+    top: 20px; /* Alinea con el language-selector */
+    right: 250px; /* Ajusta esta posición para que no se solape con las banderas */
+    z-index: 100;
+    margin-top: 0;
+    transform: none;
+    display: flex; /* Añadido para que los botones se muestren en línea */
+    gap: 10px; /* Espacio entre los botones */
+    align-items: center; /* Alinea verticalmente los botones */
+}
+
+.servicios-dropdown .menu-button {
+    /* Estilos para el botón Servicios y los nuevos botones */
+    background-color: rgba(0, 50, 100, 0.8); /* Semi-transparent blue */
+    color: #00e6e6;
+    border: 2px solid #00e6e6;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.5); /* Sombra para el efecto de brillo */
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; /* Limit button width */
+    position: relative; /* Para posibles líneas desde el botón */
+    width: auto; /* Ajusta el ancho automáticamente */
+    cursor: pointer;
+}
+
+.servicios-dropdown .menu-button:hover {
+    background-color: rgba(0, 230, 230, 0.2); /* Lighter cyan on hover */
+    color: #00ffff;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6); /* Brillo más intenso al pasar el ratón */
+    transform: translateY(-3px) scale(1.02);
+    border-color: #00ffff;
+}
+
+.servicios-dropdown .menu-container {
+    /* display: none; /* Asegura que el menú desplegable esté oculto por defecto */
+    position: absolute;
+    top: 100%; /* Coloca el menú debajo del botón */
+    left: 0; /* Alinea el menú con el botón */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el desplegable */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column; /* Apila los elementos del menú desplegable */
+    gap: 10px;
+}
+
+.servicios-dropdown .menu-container.hidden {
+    display: none;
+}
+
+/* Asegura que los estilos existentes de menu-button se apliquen a los elementos desplegables */
+.servicios-dropdown .menu-container .menu-button {
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: block; /* Hace que los enlaces se comporten como elementos de bloque para ancho completo */
+    width: 100%;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    transition: background-color 0.3s ease;
+}
+
+.servicios-dropdown .menu-container .menu-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.content-section ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 3px solid #000000;
+    color: #000000;
+    text-shadow: none;
+}
+
+.content-section p {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    text-shadow: none;
+}
+
+.content-section h2,
+.content-section h3,
+.content-section h4 {
+    color: #000000;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.content-section ul li {
+    color: #000000; /* Texto negro para elementos de lista */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto sutil */
+}
