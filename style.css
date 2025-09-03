@@ -681,6 +681,12 @@ body.homepage-background {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto sutil */
 }
 
+.carousel {
+    border: 5px solid #ffffff; /* Marco blanco de 5px */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Sombra sutil para resaltarlo más */
+    margin-bottom: 20px; /* Espacio debajo del carrusel */
+}
+
 #light-bulbs-canvas {
     position: fixed;
     top: 0;
